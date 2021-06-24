@@ -1,0 +1,8 @@
+//This is an example plugin file
+
+#include <string>
+
+std::string author = "@Joshua 'JDSherbert' Herbert";
+std::string portfolio = "https://jdsherbertportfolio.wordpress.com/"
+
+//	YOUR PLUGIN CODE GOES HERE:

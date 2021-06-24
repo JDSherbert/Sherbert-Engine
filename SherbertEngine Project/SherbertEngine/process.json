@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "commands": [
+    {
+      "command": "run-tests",
+      "params": {}
+    }
+  ]
+}

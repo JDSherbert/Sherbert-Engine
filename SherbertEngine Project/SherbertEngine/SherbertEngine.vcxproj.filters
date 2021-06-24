@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{246c933d-909b-4e52-ace4-7be4ab3da27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Common">
+      <UniqueIdentifier>{de9872ec-5ab7-495b-81e9-7da662a1234a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{e72c8dd2-c363-4679-a1aa-059b4ca35655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware">
+      <UniqueIdentifier>{07d64e87-0ab3-4f6d-b3b9-8db0eb144027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX">
+      <UniqueIdentifier>{cf5757b0-4df4-445b-9d42-3910f8738b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Windows">
+      <UniqueIdentifier>{b9564040-d171-47d3-99b8-adc5529518bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\UI">
+      <UniqueIdentifier>{9f3fa68c-05c6-42c0-80c6-d177d7ee8274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files">
+      <UniqueIdentifier>{a457d769-9f2c-4478-9f50-9f8d5bfccfe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Bindable">
+      <UniqueIdentifier>{8212b4ff-b281-4a2b-a58f-939dd096e69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Drawable">
+      <UniqueIdentifier>{e73e32bd-8d79-4c49-beae-9a4a4dcf591f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Dxerr">
+      <UniqueIdentifier>{2b144e38-4e36-4755-9c6f-ce7bdafe689d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Geometry">
+      <UniqueIdentifier>{59371286-4d7e-4419-ad85-f20c1b8261ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Jobber">
+      <UniqueIdentifier>{d0d76725-2bdc-466a-b834-7e45dadbd42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Jobber\Passlib">
+      <UniqueIdentifier>{a47a8a0b-9489-4bf3-af92-abea5c78a5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Jobber\Passlib\Base">
+      <UniqueIdentifier>{4e11c64f-ba48-46ac-823c-6ef765552a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Jobber\Graphlib">
+      <UniqueIdentifier>{4880e55d-78d9-46cb-afc1-674be37824d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Macros">
+      <UniqueIdentifier>{c62c91bc-50e8-4796-8319-6caf607ee4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Header Files\Model">
+      <UniqueIdentifier>{a0d8c3fa-c77f-488a-85ce-4a517188e6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files">
+      <UniqueIdentifier>{717c826e-e2f9-4eab-afcf-78ebaa7026f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files\Bindable">
+      <UniqueIdentifier>{ca931623-77ca-4413-a547-16916dac2740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files\Drawable">
+      <UniqueIdentifier>{43a2ba1f-f562-4758-9a91-b3da2e14ed89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files\Jobber">
+      <UniqueIdentifier>{eddc9441-0f5e-4e14-8e11-4192d31942cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files\Jobber\Passlib">
+      <UniqueIdentifier>{d1a93451-c7ba-4488-b98e-5c3f359b1338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\DirectX\Source Files\Model">
+      <UniqueIdentifier>{562fafbf-5d77-4aff-980b-56008d9d1542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Executable">
+      <UniqueIdentifier>{964fe51f-ce1c-4c12-af0e-552de490e159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\CNPY">
+      <UniqueIdentifier>{27e2fe49-2e7e-4b4d-9524-d9a3c5becf49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{647f73ea-5591-46a7-a917-cbf8d4d3997d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Header Files">
+      <UniqueIdentifier>{401cdee8-3bf2-4a5c-83a0-a1b0b75e95a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Source Files">
+      <UniqueIdentifier>{f3826edf-3e76-48d5-82ff-a6a1b7da1e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\UI\imgui">
+      <UniqueIdentifier>{8b3c7dd6-6d7e-4e5f-9157-530b072ae3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Executable\Serial">
+      <UniqueIdentifier>{cc46894b-0ad1-432a-b3d5-81f87799b6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Networking">
+      <UniqueIdentifier>{7c268d2c-fdb5-45f0-8a74-65a0c7e609b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\PhysX-4.1">
+      <UniqueIdentifier>{bb51e2f0-80fd-4209-abb3-5abe6d007a76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\PhysX-4.1\include">
+      <UniqueIdentifier>{8355a44e-cc39-4686-8f24-dd4300619f17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\PhysX-4.1\lib">
+      <UniqueIdentifier>{b33e8626-af53-4591-aa23-010f00f1fcba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Assimp">
+      <UniqueIdentifier>{79db5af7-7cbc-41e6-b864-c421783b2c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Assimp\include">
+      <UniqueIdentifier>{dbb781dc-b117-4cca-b574-ee3393db27fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Assimp\include\port">
+      <UniqueIdentifier>{ea823633-b793-4fc3-82a7-65aaba01df53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Assimp\include\Compiler">
+      <UniqueIdentifier>{53cd78b9-ea5e-4636-88a5-3e0a295d022a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\Assimp\lib">
+      <UniqueIdentifier>{4112b5f1-a88d-47cc-9cf5-c5421dbebdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD">
+      <UniqueIdentifier>{c57425c7-2f4f-4b5e-bf35-9863fef000c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\bin">
+      <UniqueIdentifier>{7f3787c7-5265-4fd4-b77f-ae18f6252010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api">
+      <UniqueIdentifier>{abc12bc3-1c8d-4255-9c3e-207585d09bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\doc">
+      <UniqueIdentifier>{d796dad4-5d2e-482d-ba1e-f97162f4e514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\bin\platforms">
+      <UniqueIdentifier>{61976fa9-0920-4d62-ade4-cf76018556ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\bin\x64">
+      <UniqueIdentifier>{98f01b09-2e98-471f-a6a7-44914303a002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\bin\x64\platforms">
+      <UniqueIdentifier>{3fdddaf8-bac3-4662-9dc3-ff86c170a090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\fsbank">
+      <UniqueIdentifier>{12c028c5-6eb8-4aa9-bb1a-a494263ac1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\lowlevel">
+      <UniqueIdentifier>{070dabda-8980-44ae-a96f-f639a2e91d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\studio">
+      <UniqueIdentifier>{9eb27a5f-40fd-446c-943b-c1bd1b5460bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\studio\inc">
+      <UniqueIdentifier>{2ae98cf3-b89d-4c88-b910-949624044c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\studio\lib">
+      <UniqueIdentifier>{7bea6a4b-bbd0-43c3-94bc-789242a50449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\lowlevel\lib">
+      <UniqueIdentifier>{6ddf64e0-6674-4c29-8361-02ee23352fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\lowlevel\inc">
+      <UniqueIdentifier>{939282d0-1ac1-4d30-b527-4c96f0664397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\fsbank\inc">
+      <UniqueIdentifier>{2053f64e-06ee-4af4-9e7a-5d999cac7821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Middleware\FMOD\api\fsbank\lib">
+      <UniqueIdentifier>{2a5356d5-b540-4723-8357-0c4c7649899e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{17c33ca2-1fdb-4a99-8928-5e64bdcb7e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Models">
+      <UniqueIdentifier>{a6800852-9ed6-4548-900b-ed4ee8cf8636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Models\_Test">
+      <UniqueIdentifier>{fbc985a0-aec4-4813-be8a-ac8a7d4867fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine\Components">
+      <UniqueIdentifier>{095f9bae-a0ae-426f-9cb4-af5614e2ccb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxerr.cpp">
+      <Filter>Middleware\DirectX\Header Files\Dxerr</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformCbuf.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Topology.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayout.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Middleware\DirectX\Source Files\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidSphere.cpp">
+      <Filter>Middleware\DirectX\Source Files\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlane.cpp">
+      <Filter>Middleware\DirectX\Source Files\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCube.cpp">
+      <Filter>Middleware\DirectX\Source Files\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Blender.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Rasterizer.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="NullPixelShader.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Step.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="Technique.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Middleware\DirectX\Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Middleware\DirectX\Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Middleware\DirectX\Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Middleware\DirectX\Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelException.cpp">
+      <Filter>Middleware\DirectX\Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueuePass.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="FullscreenPass.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGraphCompileException.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGraph.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="StepLinkingProbe.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthStencil.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="BindingPass.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformCbufScaling.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="Pass.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferClearPass.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sink.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Middleware\DirectX\Source Files\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeTexture.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxTransformCbuf.cpp">
+      <Filter>Middleware\DirectX\Source Files\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="BlurOutlineRenderGraph.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraContainer.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraIndicator.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cnpy.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DxgiInfoManager.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicConstant.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsResource.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalBlurPass.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiManager.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutCodex.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Projection.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleOutlineRenderGraph.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptCommander.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowCameraCBuf.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowRasterizer.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowSampler.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Testing.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturePreprocessor.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalBlurPass.cpp">
+      <Filter>Middleware\DirectX\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsMessageMap.cpp">
+      <Filter>Middleware\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Middleware\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>_Executable</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertEngine_Application.cpp">
+      <Filter>_Executable</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertEngine_Chronometry.cpp">
+      <Filter>GameEngine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertEngine_Exception.cpp">
+      <Filter>GameEngine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertEngine_Util.cpp">
+      <Filter>GameEngine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertEngine_XM.cpp">
+      <Filter>GameEngine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source3.cpp">
+      <Filter>Middleware\Networking</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dxerr.h">
+      <Filter>Middleware\DirectX\Header Files\Dxerr</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsThrowMacros.h">
+      <Filter>Middleware\DirectX\Header Files\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayout.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Topology.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffers.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformCbuf.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsThrowMacros.h">
+      <Filter>Middleware\DirectX\Header Files\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedTriangleList.h">
+      <Filter>Middleware\DirectX\Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Middleware\DirectX\Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidSphere.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="BindableCommon.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionalNoexcept.h">
+      <Filter>Middleware\DirectX\Header Files\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="BindableCodex.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Middleware\DirectX\Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPlane.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Middleware\DirectX\Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCube.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Blender.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffersEx.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Stencil.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Job.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="Step.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="NullPixelShader.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="TechniqueProbe.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelException.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelProbe.h">
+      <Filter>Middleware\DirectX\Header Files\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGraphCompileException.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGraph.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="StepLinkingProbe.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencil.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferResource.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertianPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferClearPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlineMaskGenerationPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlineDrawingPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformCbufScaling.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleOutlineRenderGraph.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurOutlineRenderGraph.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalBlurPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurOutlineDrawingPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalBlurPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BindingPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="FullscreenPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Pass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueuePass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Sink.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraIndicator.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Middleware\DirectX\Header Files\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="WireframePass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Channels.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMappingPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowCameraCBuf.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowSampler.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowRasterizer.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxPass.h">
+      <Filter>Middleware\DirectX\Header Files\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeTexture.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxTransformCbuf.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewport.h">
+      <Filter>Middleware\DirectX\Header Files\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMessageMap.h">
+      <Filter>Middleware\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Middleware\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraContainer.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DxgiInfoManager.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicConstant.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsResource.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutCodex.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfLog.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Projection.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptCommander.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Testing.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestModelProbe.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturePreprocessor.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Middleware\DirectX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Application.h">
+      <Filter>_Executable</Filter>
+    </ClInclude>
+    <ClInclude Include="_SherbertEngine_Documentation.h">
+      <Filter>_Executable</Filter>
+    </ClInclude>
+    <ClInclude Include="cnpy.h">
+      <Filter>Middleware\CNPY</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Chronometry.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Exception.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Math.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Utilities.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_WinHandler.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_WRL.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_XM.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiManager.h">
+      <Filter>Middleware\UI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>_Executable\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\ai_assert.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\anim.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\BaseImporter.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Bitmap.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\BlobIOSystem.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\ByteSwapper.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\camera.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\cexport.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\cfileio.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\cimport.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\color4.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\config.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\CreateAnimMesh.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\DefaultIOStream.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\DefaultIOSystem.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\DefaultLogger.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Defines.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\defs.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Exceptional.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Exporter.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\fast_atof.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\GenericProperty.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Hash.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Importer.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\importerdesc.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\IOStream.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\IOStreamBuffer.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\IOSystem.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\irrXMLWrapper.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\light.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\LineSplitter.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\LogAux.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Logger.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\LogStream.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Macros.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\material.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\MathFunctions.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\matrix3x3.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\matrix4x4.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\MemoryIOWrapper.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\mesh.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\metadata.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\NullLogger.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\ParsingUtils.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\pbrmaterial.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\postprocess.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Profiler.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\ProgressHandler.hpp">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\qnan.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\quaternion.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\RemoveComments.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\scene.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\SceneCombiner.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\SGSpatialSort.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\SkeletonMeshBuilder.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\SmoothingGroups.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\SpatialSort.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\StandardShapes.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\StreamReader.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\StreamWriter.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\StringComparison.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\StringUtils.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Subdivision.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\texture.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\TinyFormatter.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\types.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\vector2.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\vector3.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\version.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Vertex.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\XMLTools.h">
+      <Filter>Middleware\Assimp</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\port\AndroidJNI\AndroidJNIIOSystem.h">
+      <Filter>Middleware\Assimp\include\port</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Compiler\poppack1.h">
+      <Filter>Middleware\Assimp\include\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Compiler\pstdint.h">
+      <Filter>Middleware\Assimp\include\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="assimp\include\assimp\Compiler\pushpack1.h">
+      <Filter>Middleware\Assimp\include\Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\studio\inc\fmod_studio.h">
+      <Filter>Middleware\FMOD\api\studio\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\studio\inc\fmod_studio.hpp">
+      <Filter>Middleware\FMOD\api\studio\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\studio\inc\fmod_studio_common.h">
+      <Filter>Middleware\FMOD\api\studio\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod.hpp">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_codec.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_common.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_dsp.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_dsp_effects.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_errors.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\lowlevel\inc\fmod_output.h">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\fsbank\inc\fsbank.h">
+      <Filter>Middleware\FMOD\api\fsbank\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="FMOD\api\fsbank\inc\fsbank_errors.h">
+      <Filter>Middleware\FMOD\api\fsbank\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Components.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_EntityComponentSystem.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Network.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Transform.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Renderer.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Physics.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Audio.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Animator.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_Component_Network.h">
+      <Filter>GameEngine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertEngine_GameObject.h">
+      <Filter>GameEngine\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXGetErrorDescription.inl">
+      <Filter>Middleware\DirectX\Header Files\Dxerr</Filter>
+    </None>
+    <None Include="DXGetErrorString.inl">
+      <Filter>Middleware\DirectX\Header Files\Dxerr</Filter>
+    </None>
+    <None Include="DXTrace.inl">
+      <Filter>Middleware\DirectX\Header Files\Dxerr</Filter>
+    </None>
+    <None Include="process.json">
+      <Filter>Other</Filter>
+    </None>
+    <None Include="VShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="LightVectorData.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PointLight.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="ShaderOps.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="Transform.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="_PShadow_Dynamic.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="_PShadow_Static.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PhysX-4.1\lib\PhysX_64.pdb">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysX-4.1\lib\PhysXCommon_64.pdb">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysX-4.1\lib\PhysXCooking_64.pdb">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysX-4.1\lib\PhysXExtensions_static_64.pdb">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysX-4.1\lib\PhysXFoundation_64.pdb">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysXFoundation_64.dll">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysXCooking_64.dll">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysXCommon_64.dll">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="PhysX_64.dll">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </None>
+    <None Include="assimp\include\assimp\.editorconfig">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\color4.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\config.h.in">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\material.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\matrix3x3.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\matrix4x4.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\quaternion.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\SmoothingGroups.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\vector2.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="assimp\include\assimp\vector3.inl">
+      <Filter>Middleware\Assimp</Filter>
+    </None>
+    <None Include="FMOD\fmod.dll">
+      <Filter>Middleware\FMOD</Filter>
+    </None>
+    <None Include="FMOD\fmodstudio.dll">
+      <Filter>Middleware\FMOD</Filter>
+    </None>
+    <None Include="FMOD\doc\FMOD Studio Programmers API for Windows.chm">
+      <Filter>Middleware\FMOD\doc</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\libEGL.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\libfsbvorbis64.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\libGLESv2.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\msvcp110.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\msvcr110.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\Qt5Core.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\Qt5Gui.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\Qt5Widgets.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\Qt5XML.dll">
+      <Filter>Middleware\FMOD\bin\x64</Filter>
+    </None>
+    <None Include="FMOD\bin\x64\platforms\qwindows.dll">
+      <Filter>Middleware\FMOD\bin\x64\platforms</Filter>
+    </None>
+    <None Include="FMOD\bin\platforms\qwindows.dll">
+      <Filter>Middleware\FMOD\bin\platforms</Filter>
+    </None>
+    <None Include="FMOD\bin\libEGL.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\libfsbvorbis.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\libGLESv2.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\msvcp110.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\msvcr110.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\Qt5Core.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\Qt5Gui.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\Qt5Network.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\Qt5Widgets.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\bin\Qt5XML.dll">
+      <Filter>Middleware\FMOD\bin</Filter>
+    </None>
+    <None Include="FMOD\api\studio\inc\fmod_studio.cs">
+      <Filter>Middleware\FMOD\api\studio\inc</Filter>
+    </None>
+    <None Include="FMOD\api\studio\lib\fmodstudio.dll">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </None>
+    <None Include="FMOD\api\studio\lib\fmodstudio64.dll">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </None>
+    <None Include="FMOD\api\studio\lib\fmodstudioL.dll">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </None>
+    <None Include="FMOD\api\studio\lib\fmodstudioL64.dll">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\lib\fmod.dll">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\lib\fmod64.dll">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\lib\fmodL.dll">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\lib\fmodL64.dll">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\inc\fmod.cs">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\inc\fmod_dsp.cs">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </None>
+    <None Include="FMOD\api\lowlevel\inc\fmod_errors.cs">
+      <Filter>Middleware\FMOD\api\lowlevel\inc</Filter>
+    </None>
+    <None Include="FMOD\api\fsbank\lib\fsbank.dll">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </None>
+    <None Include="FMOD\api\fsbank\lib\fsbank64.dll">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </None>
+    <None Include="FMOD\api\fsbank\lib\libfsbvorbis.dll">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </None>
+    <None Include="FMOD\api\fsbank\lib\libfsbvorbis64.dll">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PhongDifMskSpcNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDif_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpcNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpc_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDif_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Phong_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Phong_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Solid_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Solid_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpcNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpc_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpcNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Fullscreen_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Blur_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurOutline_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpc_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpc_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ShadowTest_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ShadowTest_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Offset_VS_deprecated.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shadow_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shadow_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Sherbert Engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Pictures\SherbertEngineIcon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="PhysX-4.1\lib\PhysX_64.lib">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </Library>
+    <Library Include="PhysX-4.1\lib\PhysXCommon_64.lib">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </Library>
+    <Library Include="PhysX-4.1\lib\PhysXCooking_64.lib">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </Library>
+    <Library Include="PhysX-4.1\lib\PhysXExtensions_static_64.lib">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </Library>
+    <Library Include="PhysX-4.1\lib\PhysXFoundation_64.lib">
+      <Filter>Middleware\PhysX-4.1\lib</Filter>
+    </Library>
+    <Library Include="assimp\bin\x64\assimp-vc140-mt.lib">
+      <Filter>Middleware\Assimp\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\fmodstudio_vc.lib">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\fmodstudio64_vc.lib">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\fmodstudioL_vc.lib">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\fmodstudioL64_vc.lib">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\libfmodstudio.a">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\studio\lib\libfmodstudioL.a">
+      <Filter>Middleware\FMOD\api\studio\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\fmod_vc.lib">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\fmod64_vc.lib">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\fmodL_vc.lib">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\fmodL64_vc.lib">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\libfmod.a">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\lowlevel\lib\libfmodL.a">
+      <Filter>Middleware\FMOD\api\lowlevel\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\fsbank\lib\fsbank_vc.lib">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </Library>
+    <Library Include="FMOD\api\fsbank\lib\fsbank64_vc.lib">
+      <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
