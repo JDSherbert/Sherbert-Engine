@@ -215,8 +215,8 @@ More information is available at http://aka.ms/dxgiflipmodel. [ MISCELLANEOUS WA
 // -------------------------------------------------
 // I couldn't produce a successful final product. In it's current state, the engine is a poor knockoff of Blender.
 // As much as I tried, there are just too many things I need to define.
-// The Nanosuit represents the main character and can be moved around by the camera.
 // I just don't have the energy to create a portal system, implement the physics, or do the particle stuff.
+// Unable to finish implementing PhysX
 // 
 // GG; JDSherbert, signing off.
 //

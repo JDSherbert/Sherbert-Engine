@@ -71,19 +71,6 @@ int SherbertEngine_Application::GraphicsInit()
 	);
 	//map.SetRootTransform(dx::XMMatrixScaling(2.f, 2.f, 2.f));
 
-	//My Objects
-	JDSherbert_Model.SetRootTransform(
-		dx::XMMatrixRotationY(PI / 2.f) *
-		dx::XMMatrixTranslation(0.f, 0.0f, 2.0f)
-	);
-	/*JDSherbert_Bol.SetRootTransform(
-		dx::XMMatrixRotationY(PI / 2.f) *
-		dx::XMMatrixTranslation(2.f, 0.0f, 2.0f)
-	);*/
-	/*JDSherbert_Scene.SetRootTransform(
-		dx::XMMatrixRotationY(PI / 2.f) *
-		dx::XMMatrixTranslation(2.f, 0.0f, 2.0f)
-	);*/
 	suzanne.SetRootTransform(
 		dx::XMMatrixRotationY(PI / 2.f) *
 		dx::XMMatrixTranslation(25.f, 2.0f, 20.0f) *
@@ -100,8 +87,6 @@ int SherbertEngine_Application::GraphicsInit()
 	nanosuit.LinkTechniques(rendgraphbinder);
 	camera.LinkTechniques(rendgraphbinder);
 
-	JDSherbert_Model.LinkTechniques(rendgraphbinder);
-	//JDSherbert_Bol.LinkTechniques(rendgraphbinder);
 	//JDSherbert_Scene.LinkTechniques(rendgraphbinder);
 	suzanne.LinkTechniques(rendgraphbinder);
 
@@ -469,10 +454,6 @@ void SherbertEngine_Application::RenderUpdate( float deltaTime )
 	camera.Submit( n_SherbRenderChannels::main );
 
 	//My objects
-	JDSherbert_Model.Submit(n_SherbRenderChannels::main);
-	JDSherbert_Model.Submit(n_SherbRenderChannels::shadow);
-	//JDSherbert_Bol.Submit(n_SherbRenderChannels::main);
-	//JDSherbert_Bol.Submit(n_SherbRenderChannels::shadow);
 	suzanne.Submit(n_SherbRenderChannels::main);
 	suzanne.Submit(n_SherbRenderChannels::shadow);
 	//JDSherbert_Scene.Submit(n_SherbRenderChannels::main);
@@ -507,12 +488,8 @@ void SherbertEngine_Application::RenderUpdate( float deltaTime )
 	cube2.SpawnControlWindow( SherbertEngine_window.Gfx(),"Cube 2" );
 
 	//MyObj
-	static MP JDSherbert_ModelProbe{ "JDSherbert's Character" };
-	//static MP JDSherbert_BolProbe{ "Bol" };
 	//static MP JDSherbert_SceneProbe{ "JDSherbert's Scene" };
 	static MP suzanneProbe{ "Suzanne" };
-	JDSherbert_ModelProbe.SpawnWindow(JDSherbert_Model);
-	//JDSherbert_BolProbe.SpawnWindow(JDSherbert_Bol);
 	//JDSherbert_SceneProbe.SpawnWindow(JDSherbert_Scene);
 	suzanneProbe.SpawnWindow(suzanne);
 	

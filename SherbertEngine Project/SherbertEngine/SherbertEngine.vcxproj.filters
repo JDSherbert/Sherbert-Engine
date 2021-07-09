@@ -433,6 +433,19 @@
     <ClCompile Include="Source3.cpp">
       <Filter>Middleware\Networking</Filter>
     </ClCompile>
+    <ClCompile Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdC\CMakeCCompilerId.c" />
+    <ClCompile Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CompilerIdCXX\CMakeCXXCompilerId.cpp" />
+    <ClCompile Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\CheckTypeSize\HAS_SOCKLEN_T.c" />
+    <ClCompile Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\ShowIncludes\main.c" />
+    <ClCompile Include="enet-1.3.17\callbacks.c" />
+    <ClCompile Include="enet-1.3.17\compress.c" />
+    <ClCompile Include="enet-1.3.17\host.c" />
+    <ClCompile Include="enet-1.3.17\list.c" />
+    <ClCompile Include="enet-1.3.17\packet.c" />
+    <ClCompile Include="enet-1.3.17\peer.c" />
+    <ClCompile Include="enet-1.3.17\protocol.c" />
+    <ClCompile Include="enet-1.3.17\unix.c" />
+    <ClCompile Include="enet-1.3.17\win32.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dxerr.h">
@@ -1077,6 +1090,16 @@
     <ClInclude Include="SherbertEngine_GameObject.h">
       <Filter>GameEngine\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="enet-1.3.17\include\enet\callbacks.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\enet.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\list.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\protocol.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\time.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\types.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\unix.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\utility.h" />
+    <ClInclude Include="enet-1.3.17\include\enet\win32.h" />
+    <ClInclude Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\ShowIncludes\foo.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DXGetErrorDescription.inl">
@@ -1292,6 +1315,183 @@
     <None Include="FMOD\api\fsbank\lib\libfsbvorbis64.dll">
       <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
     </None>
+    <None Include="enet-1.3.17\docs\html\search\all_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_2.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_3.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_4.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_5.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_6.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_7.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_8.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_9.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_10.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_11.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_12.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_a.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_b.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_c.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_d.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_e.html" />
+    <None Include="enet-1.3.17\docs\html\search\all_f.html" />
+    <None Include="enet-1.3.17\docs\html\search\classes_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\defines_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\defines_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\enums_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\enumvalues_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_2.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_3.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_4.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_5.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_6.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_7.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_8.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_9.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_a.html" />
+    <None Include="enet-1.3.17\docs\html\search\files_b.html" />
+    <None Include="enet-1.3.17\docs\html\search\functions_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\groups_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\nomatches.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_2.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_3.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_4.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_5.html" />
+    <None Include="enet-1.3.17\docs\html\search\pages_6.html" />
+    <None Include="enet-1.3.17\docs\html\search\typedefs_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\typedefs_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_0.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_1.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_2.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_3.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_4.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_5.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_6.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_7.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_8.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_9.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_10.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_11.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_12.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_a.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_b.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_c.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_d.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_e.html" />
+    <None Include="enet-1.3.17\docs\html\search\variables_f.html" />
+    <None Include="enet-1.3.17\docs\html\annotated.html" />
+    <None Include="enet-1.3.17\docs\html\callbacks_8c.html" />
+    <None Include="enet-1.3.17\docs\html\callbacks_8h.html" />
+    <None Include="enet-1.3.17\docs\html\compress_8c.html" />
+    <None Include="enet-1.3.17\docs\html\design_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\dir_d44c64559bbebec7f509842c48db8b23.html" />
+    <None Include="enet-1.3.17\docs\html\dir_fd6c3a2b8754f03ff2a62b53108cf6e2.html" />
+    <None Include="enet-1.3.17\docs\html\Downloads.html" />
+    <None Include="enet-1.3.17\docs\html\enet_8h.html" />
+    <None Include="enet-1.3.17\docs\html\FAQ.html" />
+    <None Include="enet-1.3.17\docs\html\FAQ_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\Features.html" />
+    <None Include="enet-1.3.17\docs\html\files.html" />
+    <None Include="enet-1.3.17\docs\html\globals.html" />
+    <None Include="enet-1.3.17\docs\html\globals_defs.html" />
+    <None Include="enet-1.3.17\docs\html\globals_enum.html" />
+    <None Include="enet-1.3.17\docs\html\globals_eval.html" />
+    <None Include="enet-1.3.17\docs\html\globals_func.html" />
+    <None Include="enet-1.3.17\docs\html\globals_m.html" />
+    <None Include="enet-1.3.17\docs\html\globals_s.html" />
+    <None Include="enet-1.3.17\docs\html\globals_type.html" />
+    <None Include="enet-1.3.17\docs\html\group__Address.html" />
+    <None Include="enet-1.3.17\docs\html\group__callbacks.html" />
+    <None Include="enet-1.3.17\docs\html\group__global.html" />
+    <None Include="enet-1.3.17\docs\html\group__host.html" />
+    <None Include="enet-1.3.17\docs\html\group__list.html" />
+    <None Include="enet-1.3.17\docs\html\group__Packet.html" />
+    <None Include="enet-1.3.17\docs\html\group__peer.html" />
+    <None Include="enet-1.3.17\docs\html\group__private.html" />
+    <None Include="enet-1.3.17\docs\html\group__socket.html" />
+    <None Include="enet-1.3.17\docs\html\host_8c.html" />
+    <None Include="enet-1.3.17\docs\html\index.html" />
+    <None Include="enet-1.3.17\docs\html\install_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\Installation.html" />
+    <None Include="enet-1.3.17\docs\html\IRCChannel.html" />
+    <None Include="enet-1.3.17\docs\html\License.html" />
+    <None Include="enet-1.3.17\docs\html\license_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\list_8c.html" />
+    <None Include="enet-1.3.17\docs\html\list_8h.html" />
+    <None Include="enet-1.3.17\docs\html\MailingList.html" />
+    <None Include="enet-1.3.17\docs\html\mainpage_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\modules.html" />
+    <None Include="enet-1.3.17\docs\html\packet_8c.html" />
+    <None Include="enet-1.3.17\docs\html\peer_8c.html" />
+    <None Include="enet-1.3.17\docs\html\protocol_8c.html" />
+    <None Include="enet-1.3.17\docs\html\protocol_8h.html" />
+    <None Include="enet-1.3.17\docs\html\structENetAcknowledgement.html" />
+    <None Include="enet-1.3.17\docs\html\structENetAddress.html" />
+    <None Include="enet-1.3.17\docs\html\structENetBuffer.html" />
+    <None Include="enet-1.3.17\docs\html\structENetCallbacks.html" />
+    <None Include="enet-1.3.17\docs\html\structENetChannel.html" />
+    <None Include="enet-1.3.17\docs\html\structENetCompressor.html" />
+    <None Include="enet-1.3.17\docs\html\structENetEvent.html" />
+    <None Include="enet-1.3.17\docs\html\structENetHost.html" />
+    <None Include="enet-1.3.17\docs\html\structENetIncomingCommand.html" />
+    <None Include="enet-1.3.17\docs\html\structENetList.html" />
+    <None Include="enet-1.3.17\docs\html\structENetListNode.html" />
+    <None Include="enet-1.3.17\docs\html\structENetOutgoingCommand.html" />
+    <None Include="enet-1.3.17\docs\html\structENetPacket.html" />
+    <None Include="enet-1.3.17\docs\html\structENetPeer.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolAcknowledge.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolBandwidthLimit.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolCommandHeader.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolConnect.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolDisconnect.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolHeader.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolPing.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolSendFragment.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolSendReliable.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolSendUnreliable.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolSendUnsequenced.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolThrottleConfigure.html" />
+    <None Include="enet-1.3.17\docs\html\structENetProtocolVerifyConnect.html" />
+    <None Include="enet-1.3.17\docs\html\time_8h.html" />
+    <None Include="enet-1.3.17\docs\html\Tutorial.html" />
+    <None Include="enet-1.3.17\docs\html\tutorial_8dox.html" />
+    <None Include="enet-1.3.17\docs\html\types_8h.html" />
+    <None Include="enet-1.3.17\docs\html\unionENetProtocol.html" />
+    <None Include="enet-1.3.17\docs\html\unix_8c.html" />
+    <None Include="enet-1.3.17\docs\html\unix_8h.html" />
+    <None Include="enet-1.3.17\docs\html\usergroup0.html" />
+    <None Include="enet-1.3.17\docs\html\utility_8h.html" />
+    <None Include="enet-1.3.17\docs\html\win32_8c.html" />
+    <None Include="enet-1.3.17\docs\html\win32_8h.html" />
+    <None Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CMakeDetermineCompilerABI_C.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="enet-1.3.17\out\build\x64-Debug\CMakeFiles\3.20.21032501-MSVC_2\CMakeDetermineCompilerABI_CXX.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="enet-1.3.17\aclocal.m4" />
+    <None Include="enet-1.3.17\ChangeLog" />
+    <None Include="enet-1.3.17\compile" />
+    <None Include="enet-1.3.17\config.guess" />
+    <None Include="enet-1.3.17\config.sub" />
+    <None Include="enet-1.3.17\configure" />
+    <None Include="enet-1.3.17\configure.ac" />
+    <None Include="enet-1.3.17\depcomp" />
+    <None Include="enet-1.3.17\Doxyfile" />
+    <None Include="enet-1.3.17\enet.dsp" />
+    <None Include="enet-1.3.17\enet_dll.cbp" />
+    <None Include="enet-1.3.17\install-sh" />
+    <None Include="enet-1.3.17\libenet.pc.in" />
+    <None Include="enet-1.3.17\LICENSE" />
+    <None Include="enet-1.3.17\ltmain.sh" />
+    <None Include="enet-1.3.17\Makefile.am" />
+    <None Include="enet-1.3.17\Makefile.in" />
+    <None Include="enet-1.3.17\missing" />
+    <None Include="enet-1.3.17\premake4.lua" />
+    <None Include="enet-1.3.17\README" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="PhongDifMskSpcNrm_PS.hlsl">
@@ -1444,5 +1644,13 @@
     <Library Include="FMOD\api\fsbank\lib\fsbank64_vc.lib">
       <Filter>Middleware\FMOD\api\fsbank\lib</Filter>
     </Library>
+    <Library Include="enet-1.3.17\enet.lib" />
+    <Library Include="enet-1.3.17\enet64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="enet-1.3.17\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="enet-1.3.17\DoxygenLayout.xml" />
   </ItemGroup>
 </Project>

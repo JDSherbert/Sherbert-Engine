@@ -36,6 +36,7 @@
 #include <fmod_studio.hpp>
 #include <fmod.hpp>
 
+
 //Generic
 #include <string>
 #include <iostream>
@@ -88,7 +89,6 @@ private:
 	Model map{ SherbertEngine_window.Gfx(), "Models\\sponza\\sponza.obj", 0.1f};
 	Model goblinhead{ SherbertEngine_window.Gfx(),"Models\\gobber\\GoblinX.obj"};
 	Model nanosuit{ SherbertEngine_window.Gfx(),"Models\\nano_textured\\nanosuit.obj", 0.1f};
-	Model JDSherbert_Model{ SherbertEngine_window.Gfx(),"Models\\302_Model\\JDSherbert_Model.fbx", 0.06f};
 	//Model JDSherbert_Bol{ SherbertEngine_window.Gfx(),"Models\\302_Model\\JDSherbert_Bol.fbx", 0.01f };
 	//Model JDSherbert_Scene{ SherbertEngine_window.Gfx(),"Models\\302_Model\\JDSherbert_302_Scene.obj", 2.0f };
 	Model suzanne{ SherbertEngine_window.Gfx(),"Models\\suzanne.obj"};
