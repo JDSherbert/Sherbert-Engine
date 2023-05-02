@@ -19,11 +19,11 @@
   -----------------------------------------------------------------------
 Repository for the Sherbert Engine - a C++ and DirectX powered game engine.
 Using these technologies:
- - [UI] Imgui: https://github.com/ocornut/imgui
- - [GRAPHICS] Microsoft DirectX: https://visualstudio.microsoft.com/vs/features/directx-game-dev/
- - [PHYSICS] Nvidia PhysX: https://github.com/NVIDIAGameWorks/PhysX
- - [AUDIO] FMOD: https://www.fmod.com/docs/2.02/api/welcome.html
- - [NETWORKING] Enet: http://enet.bespin.org/
- - [IMPORTER] Assimp: https://github.com/assimp/assimp
+ - 📲  [UI] Imgui: https://github.com/ocornut/imgui
+ - 📺 [GRAPHICS] Microsoft DirectX: https://visualstudio.microsoft.com/vs/features/directx-game-dev/
+ - 🚀 [PHYSICS] Nvidia PhysX: https://github.com/NVIDIAGameWorks/PhysX
+ - 🎶 [AUDIO] FMOD: https://www.fmod.com/docs/2.02/api/welcome.html
+ - 📶 [NETWORKING] Enet: http://enet.bespin.org/
+ - 📩 [IMPORTER] Assimp: https://github.com/assimp/assimp
 
 Lemme know if you have any questions or feedback!
