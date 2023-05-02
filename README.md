@@ -1,3 +1,5 @@
+![SherbertLogo](https://user-images.githubusercontent.com/43964243/235794484-d102352c-b546-442b-8641-276e9dc37ce1.png)
+
 # Sherbert Engine Project
 
 <!-- Header Start -->
@@ -21,5 +23,6 @@ Using these technologies:
  - [PHYSICS] Nvidia PhysX: https://github.com/NVIDIAGameWorks/PhysX
  - [AUDIO] FMOD: https://www.fmod.com/docs/2.02/api/welcome.html
  - [NETWORKING] Enet: http://enet.bespin.org/
+ - [IMPORTER] Assimp: https://github.com/assimp/assimp
 
 Lemme know if you have any questions or feedback!
