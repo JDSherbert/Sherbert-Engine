@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Dxerr">
+      <UniqueIdentifier>{2b144e38-4e36-4755-9c6f-ce7bdafe689d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{246c933d-909b-4e52-ace4-7be4ab3da27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{8b3c7dd6-6d7e-4e5f-9157-530b072ae3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Common">
+      <UniqueIdentifier>{de9872ec-5ab7-495b-81e9-7da662a1234a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{e72c8dd2-c363-4679-a1aa-059b4ca35655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{9ba2376f-8b4e-4389-a178-fb2baf4541c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine">
+      <UniqueIdentifier>{1978d7da-362b-4fac-a6ac-3c7935abbbd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Bindable">
+      <UniqueIdentifier>{8212b4ff-b281-4a2b-a58f-939dd096e69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Bindable\Public">
+      <UniqueIdentifier>{f4cdf5c1-8a44-45c7-92bf-f89a2eb3b9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Bindable\Private">
+      <UniqueIdentifier>{737b012f-f70f-4ee3-af3e-87ee758202d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Drawable">
+      <UniqueIdentifier>{e73e32bd-8d79-4c49-beae-9a4a4dcf591f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Drawable\Public">
+      <UniqueIdentifier>{3d101b6d-3036-4d73-b8ff-891d007c311d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Drawable\Private">
+      <UniqueIdentifier>{132df8a3-63a8-4d1a-8638-12589713b73b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber">
+      <UniqueIdentifier>{eddc9441-0f5e-4e14-8e11-4192d31942cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Private">
+      <UniqueIdentifier>{cac337f0-4da1-4903-9c35-36d8bb78317f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Private\Passlib">
+      <UniqueIdentifier>{d1a93451-c7ba-4488-b98e-5c3f359b1338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Public">
+      <UniqueIdentifier>{94dec146-f55d-40ae-a6d0-cea3f4a286ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Public\Graphlib">
+      <UniqueIdentifier>{4880e55d-78d9-46cb-afc1-674be37824d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Public\Passlib">
+      <UniqueIdentifier>{a47a8a0b-9489-4bf3-af92-abea5c78a5ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Jobber\Public\Passlib\Base">
+      <UniqueIdentifier>{4e11c64f-ba48-46ac-823c-6ef765552a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Model">
+      <UniqueIdentifier>{562fafbf-5d77-4aff-980b-56008d9d1542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Model\Private">
+      <UniqueIdentifier>{bc7a3078-0225-492f-80af-659374cb16e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Model\Public">
+      <UniqueIdentifier>{32e6d7fb-fc52-45e6-a4c7-92162418414a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Geometry">
+      <UniqueIdentifier>{8022a43e-ab47-4194-991f-7df8f3c7aafc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Geometry\Public">
+      <UniqueIdentifier>{0ea05862-305f-4301-a010-7733c17a16fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Geometry\Private">
+      <UniqueIdentifier>{8c430e1a-cc6f-4c3c-8d21-558d10ae1a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Macros">
+      <UniqueIdentifier>{2865c75c-ba8a-46cc-ba80-28a10320e088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Macros\Public">
+      <UniqueIdentifier>{74b9b586-c675-4210-9df9-81e441342e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Application">
+      <UniqueIdentifier>{7be3f469-ed5c-40e4-85f0-00cbf8a2aab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Application\Private">
+      <UniqueIdentifier>{802fb41b-2489-47c4-aac7-4e161a19ed00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SherbertEngine\Application\Public">
+      <UniqueIdentifier>{37382cf2-6b89-463a-9770-e99390f5996b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxerr.cpp">
+      <Filter>Dxerr</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueuePass.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="FullscreenPass.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGraphCompileException.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="BindingPass.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferClearPass.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sink.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Blender.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeTexture.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthStencil.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLayout.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="NullPixelShader.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Rasterizer.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Sampler.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyboxTransformCbuf.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Topology.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformCbuf.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformCbufScaling.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Source\SherbertEngine\Bindable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Source\SherbertEngine\Drawable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidSphere.cpp">
+      <Filter>Source\SherbertEngine\Drawable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCube.cpp">
+      <Filter>Source\SherbertEngine\Drawable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlane.cpp">
+      <Filter>Source\SherbertEngine\Drawable\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Pass.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderGraph.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Step.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="StepLinkingProbe.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Technique.cpp">
+      <Filter>Source\SherbertEngine\Jobber\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source\SherbertEngine\Model\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source\SherbertEngine\Model\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source\SherbertEngine\Model\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelException.cpp">
+      <Filter>Source\SherbertEngine\Model\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source\SherbertEngine\Model\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="BlurOutlineRenderGraph.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraContainer.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraIndicator.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="cnpy.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="DxgiInfoManager.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicConstant.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Frustum.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsResource.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalBlurPass.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiManager.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutCodex.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Projection.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleOutlineRenderGraph.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptCommander.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowCameraCBuf.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowRasterizer.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowSampler.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertException.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertTimer.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertUtil.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SherbertXM.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Testing.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturePreprocessor.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalBlurPass.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsMessageMap.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source\SherbertEngine\Application\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dxerr.h">
+      <Filter>Dxerr</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGraphCompileException.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="LambertianPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferClearPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlineMaskGenerationPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlineDrawingPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleOutlineRenderGraph.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurOutlineRenderGraph.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalBlurPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BlurOutlineDrawingPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalBlurPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="BindingPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="FullscreenPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Pass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueuePass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Sink.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Source.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="WireframePass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Channels.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Graphlib</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowMappingPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxPass.h">
+      <Filter>Source\SherbertEngine\Jobber\Public\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Bindable.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="BindableCodex.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="BindableCommon.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Blender.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferResource.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffers.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffersEx.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeTexture.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencil.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="InputLayout.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="NullPixelShader.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Sampler.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowCameraCBuf.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowRasterizer.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowSampler.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxTransformCbuf.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Stencil.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Topology.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformCbuf.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformCbufScaling.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Viewport.h">
+      <Filter>Source\SherbertEngine\Bindable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraIndicator.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Frustum.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidSphere.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCube.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPlane.h">
+      <Filter>Source\SherbertEngine\Drawable\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Job.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderGraph.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Step.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="StepLinkingProbe.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TechniqueProbe.h">
+      <Filter>Source\SherbertEngine\Jobber\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Source\SherbertEngine\Geometry\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexedTriangleList.h">
+      <Filter>Source\SherbertEngine\Geometry\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Source\SherbertEngine\Geometry\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Source\SherbertEngine\Geometry\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsThrowMacros.h">
+      <Filter>Source\SherbertEngine\Macros\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionalNoexcept.h">
+      <Filter>Source\SherbertEngine\Macros\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsThrowMacros.h">
+      <Filter>Source\SherbertEngine\Macros\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelException.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelProbe.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Source\SherbertEngine\Model\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraContainer.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="cnpy.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Colour.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="DxgiInfoManager.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicConstant.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsResource.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiManager.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutCodex.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfLog.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Projection.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptCommander.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertException.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertMath.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertTimer.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertUtil.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertWin.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertWRL.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="SherbertXM.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Testing.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TestModelProbe.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturePreprocessor.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsMessageMap.h">
+      <Filter>Source\SherbertEngine\Application\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXGetErrorDescription.inl">
+      <Filter>Dxerr</Filter>
+    </None>
+    <None Include="DXGetErrorString.inl">
+      <Filter>Dxerr</Filter>
+    </None>
+    <None Include="DXTrace.inl">
+      <Filter>Dxerr</Filter>
+    </None>
+    <None Include="process.json">
+      <Filter>Other</Filter>
+    </None>
+    <None Include="VShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="LightVectorData.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PointLight.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="ShaderOps.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="Transform.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="_PShadow_Dynamic.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="_PShadow_Static.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PhongDifMskSpcNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDif_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpcNrm_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpc_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDif_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Phong_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Phong_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Solid_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Solid_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpcNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpc_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifSpcNrm_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Fullscreen_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Blur_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="BlurOutline_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpc_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongDifMskSpc_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ShadowTest_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="ShadowTest_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Offset_VS_deprecated.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shadow_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shadow_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SherbertEngine.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

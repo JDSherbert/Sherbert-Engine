@@ -1,9 +1,0 @@
-﻿  SherbertEngine_Server.cpp
-C:\Users\JDSherbert\Documents\_Main\Github\301CR-EngineRepo\SherbertEngine_Server\SherbertEngine_Server.cpp(40,14): warning C4101: 'dataPacket': unreferenced local variable
-SherbertEngine_Server.obj : error LNK2019: unresolved external symbol _enet_initialize referenced in function _main
-SherbertEngine_Server.obj : error LNK2019: unresolved external symbol _enet_deinitialize referenced in function _main
-SherbertEngine_Server.obj : error LNK2019: unresolved external symbol _enet_host_create referenced in function _main
-SherbertEngine_Server.obj : error LNK2019: unresolved external symbol _enet_host_destroy referenced in function _main
-SherbertEngine_Server.obj : error LNK2019: unresolved external symbol _enet_host_service referenced in function _main
-C:\Users\JDSherbert\Documents\_Main\Github\301CR-EngineRepo\SherbertEngine_Server\enet-1.3.17\enet64.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\JDSherbert\Documents\_Main\Github\301CR-EngineRepo\SherbertEngine_Server\Debug\SherbertEngine_Server.exe : fatal error LNK1120: 5 unresolved externals

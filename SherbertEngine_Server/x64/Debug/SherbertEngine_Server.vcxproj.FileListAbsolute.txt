@@ -1,2 +1,0 @@
-C:\Users\JDSherbert\Documents\_Main\Github\301CR-EngineRepo\SherbertEngine_Server\x64\Debug\SherbertEngine_Server.exe
-C:\Users\JDSherbert\Documents\_Main\Github\301CR-EngineRepo\SherbertEngine_Server\x64\Debug\SherbertEngine_Server.pdb
