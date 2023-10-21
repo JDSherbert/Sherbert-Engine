@@ -1,4 +1,4 @@
-![SherbertLogo](https://user-images.githubusercontent.com/43964243/235794484-d102352c-b546-442b-8641-276e9dc37ce1.png)
+![JDSherbert - Engine Banner](https://github.com/JDSherbert/Sherbert-Engine/assets/43964243/1689a49d-d54a-48c2-8299-79cb1e04325c)
 
 # Sherbert Engine Project
 
@@ -12,18 +12,4 @@
 <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJDSherbert%2FSherbert-Engine%2Fhit-counter%2FREADME&count_bg=%2379C83D&title_bg=%23555555&labelColor=0E1128&title=🔍&style=for-the-badge">
   <br></br>
   -----------------------------------------------------------------------
-  
-  -ARCHIVED- 
-  
-  
-  -----------------------------------------------------------------------
-Repository for the Sherbert Engine - a C++ and DirectX powered game engine.
-Using these technologies:
- - 📲  [UI] Imgui: https://github.com/ocornut/imgui
- - 📺 [GRAPHICS] Microsoft DirectX: https://visualstudio.microsoft.com/vs/features/directx-game-dev/
- - 🚀 [PHYSICS] Nvidia PhysX: https://github.com/NVIDIAGameWorks/PhysX
- - 🎶 [AUDIO] FMOD: https://www.fmod.com/docs/2.02/api/welcome.html
- - 📶 [NETWORKING] Enet: http://enet.bespin.org/
- - 📩 [IMPORTER] Assimp: https://github.com/assimp/assimp
 
-Lemme know if you have any questions or feedback!
