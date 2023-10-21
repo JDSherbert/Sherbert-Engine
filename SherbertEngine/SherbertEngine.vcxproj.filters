@@ -690,6 +690,7 @@
     <ClInclude Include="WindowsMessageMap.h">
       <Filter>Source\SherbertEngine\Application\Public</Filter>
     </ClInclude>
+    <ClInclude Include="resource1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DXGetErrorDescription.inl">
@@ -813,5 +814,10 @@
     <Image Include="SherbertEngine.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SherbertEngine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

@@ -312,6 +312,7 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="cnpy.h" />
     <ClInclude Include="CubeTexture.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="ShadowCameraCBuf.h" />
     <ClInclude Include="CameraContainer.h" />
     <ClInclude Include="CameraIndicator.h" />
@@ -540,6 +541,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="SherbertEngine.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SherbertEngine.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
