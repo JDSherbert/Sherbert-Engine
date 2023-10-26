@@ -22,7 +22,7 @@ const char* SherbertException::what() const noexcept
 
 const char* SherbertException::GetType() const noexcept
 {
-	return "Chili Exception";
+	return "Sherbert Exception";
 }
 
 int SherbertException::GetLine() const noexcept
