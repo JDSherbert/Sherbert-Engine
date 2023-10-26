@@ -18,7 +18,7 @@
 x64/
 x86/
 bld/
-[Bb]in/
+#[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -51,8 +51,6 @@ artifacts/
 *.ilk
 *.meta
 *.obj
-!hw3d/Models/**/*.obj
-!hw3d/assimp/bin/*
 *.pch
 *.pdb
 *.pgc
