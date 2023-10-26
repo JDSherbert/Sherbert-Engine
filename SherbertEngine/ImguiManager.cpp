@@ -1,7 +1,7 @@
 // ©2021 JDSherbert. All rights reserved.
 
 #include "ImguiManager.h"
-#include "imgui/imgui.h"
+#include "Vendor/imgui/imgui.h"
 #include <filesystem>
 
 ImguiManager::ImguiManager()

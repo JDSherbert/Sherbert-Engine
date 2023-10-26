@@ -1,7 +1,7 @@
 // ©2021 JDSherbert. All rights reserved.
 
 #include "PointLight.h"
-#include "imgui/imgui.h"
+#include "Vendor/imgui/imgui.h"
 #include "Camera.h"
 #include "SherbertMath.h"
 

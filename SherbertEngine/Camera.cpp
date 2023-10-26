@@ -1,7 +1,7 @@
 // ©2021 JDSherbert. All rights reserved.
 
 #include "Camera.h"
-#include "imgui/imgui.h"
+#include "Vendor/imgui/imgui.h"
 #include "SherbertMath.h"
 #include "Graphics.h"
 

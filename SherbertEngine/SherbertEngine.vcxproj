@@ -46,12 +46,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)dxtex\include;$(ProjectDir)assimp\include</IncludePath>
-    <LibraryPath>$(ProjectDir)dxtex\bin;$(ProjectDir)assimp\bin\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)Vendor\dxtex\include;$(ProjectDir)Vendor\assimp\include</IncludePath>
+    <LibraryPath>$(ProjectDir)Vendor\dxtex\bin;$(ProjectDir)Vendor\assimp\bin\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)dxtex\include;$(ProjectDir)assimp\include</IncludePath>
-    <LibraryPath>$(ProjectDir)dxtex\bin;$(ProjectDir)assimp\bin\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)Vendor\dxtex\include;$(ProjectDir)Vendor\assimp\include</IncludePath>
+    <LibraryPath>$(ProjectDir)Vendor\dxtex\bin;$(ProjectDir)Vendor\assimp\bin\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -128,12 +128,6 @@
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="GraphicsResource.cpp" />
     <ClCompile Include="ImguiManager.cpp" />
-    <ClCompile Include="imgui\imgui.cpp" />
-    <ClCompile Include="imgui\imgui_demo.cpp" />
-    <ClCompile Include="imgui\imgui_draw.cpp" />
-    <ClCompile Include="imgui\imgui_impl_dx11.cpp" />
-    <ClCompile Include="imgui\imgui_impl_win32.cpp" />
-    <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
     <ClCompile Include="InputLayout.cpp" />
     <ClCompile Include="Job.cpp" />
@@ -264,6 +258,12 @@
     <ClCompile Include="Topology.cpp" />
     <ClCompile Include="TransformCbuf.cpp" />
     <ClCompile Include="TransformCbufScaling.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Vendor\imgui\imgui_widgets.cpp" />
     <ClCompile Include="Vertex.cpp" />
     <ClCompile Include="VertexBuffer.cpp" />
     <ClCompile Include="VertexShader.cpp" />
@@ -379,14 +379,6 @@
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="GraphicsThrowMacros.h" />
     <ClInclude Include="ImguiManager.h" />
-    <ClInclude Include="imgui\imconfig.h" />
-    <ClInclude Include="imgui\imgui.h" />
-    <ClInclude Include="imgui\imgui_impl_dx11.h" />
-    <ClInclude Include="imgui\imgui_impl_win32.h" />
-    <ClInclude Include="imgui\imgui_internal.h" />
-    <ClInclude Include="imgui\imstb_rectpack.h" />
-    <ClInclude Include="imgui\imstb_textedit.h" />
-    <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="IndexBuffer.h" />
     <ClInclude Include="IndexedTriangleList.h" />
     <ClInclude Include="InputLayout.h" />
@@ -406,6 +398,14 @@
     <ClInclude Include="Topology.h" />
     <ClInclude Include="TransformCbuf.h" />
     <ClInclude Include="TransformCbufScaling.h" />
+    <ClInclude Include="Vendor\imgui\imconfig.h" />
+    <ClInclude Include="Vendor\imgui\imgui.h" />
+    <ClInclude Include="Vendor\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Vendor\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="Vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="Vendor\imgui\imstb_truetype.h" />
     <ClInclude Include="Vertex.h" />
     <ClInclude Include="VertexBuffer.h" />
     <ClInclude Include="VertexShader.h" />

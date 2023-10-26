@@ -4,7 +4,7 @@
 #include <sstream>
 #include "resource.h"
 #include "WindowsThrowMacros.h"
-#include "imgui/imgui_impl_win32.h"
+#include "Vendor/imgui/imgui_impl_win32.h"
 
 // Window Class Stuff
 Window::WindowClass Window::WindowClass::wndClass;

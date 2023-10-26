@@ -8,8 +8,8 @@
 #include <DirectXMath.h>
 #include <array>
 #include "GraphicsThrowMacros.h"
-#include "imgui/imgui_impl_dx11.h"
-#include "imgui/imgui_impl_win32.h"
+#include "Vendor/imgui/imgui_impl_dx11.h"
+#include "Vendor/imgui/imgui_impl_win32.h"
 #include "DepthStencil.h"
 #include "RenderTarget.h"
 
