@@ -389,7 +389,7 @@ void AssetsWindow::Render()
 void AssetsWindow::OpenDir(std::string path)
 {
 	assert(!path.empty());
-	//assert(std::filesystem::exists(path));
+	assert(std::filesystem::exists(path));
 
 	if (!outCore)
 		return;

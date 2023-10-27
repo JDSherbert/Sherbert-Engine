@@ -13,7 +13,7 @@ public:
 	bool renderAbout = false;
 
 private:
-	ID3D11ShaderResourceView* _StarBanner = nullptr;
+	ID3D11ShaderResourceView* _SherbertBanner = nullptr;
 	std::string _VersionText = "";
 };
 

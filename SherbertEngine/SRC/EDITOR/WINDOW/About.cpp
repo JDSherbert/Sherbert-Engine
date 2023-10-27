@@ -28,19 +28,18 @@ void AboutWindow::Render()
 		| ImGuiWindowFlags_NoScrollbar
 		| ImGuiWindowFlags_NoScrollWithMouse);
 	{
-		ImGui::Image((void*)_StarBanner, ImVec2(84, 84));
+		ImGui::Image((void*)_SherbertBanner, ImVec2(84, 84));
 		ImGui::SameLine();
 		ImGui::Text(
 			"Sherbert Engine\n"
 			"%s\n"
-			"https://github.com/JDSherbert/Sherbert-Engine\n"
-			"Sherbert Engine is licensed under the MIT License.",
+			"SherbertEngine is licensed under the MIT License.",
 			_VersionText.c_str());
 		ImGui::Text("Attributions:");
 		ImGui::BeginChild("Attributions", ImVec2(0, 128));
 		{
 			ImGui::Text("ImGui : https://github.com/ocornut/imgui");
-			ImGui::Text("assimp : https://github.com/assimp/assimp");
+			ImGui::Text("Assimp : https://github.com/assimp/assimp");
 			ImGui::Text("EnTT : https://github.com/skypjack/entt");
 			ImGui::Text("Lua : https://github.com/lua/lua");
 			ImGui::Text("PhysX : https://github.com/NVIDIAGameWorks/PhysX");
@@ -52,9 +51,9 @@ void AboutWindow::Render()
 			ImGui::Text("DirectXTex : https://github.com/microsoft/DirectXTex");
 		}
 		ImGui::EndChild();
-		float _X = windowPadding.x + ImGui::CalcTextSize("(c)2023 JDSherbert. All Rights Reserved.").x;
+		float _X = windowPadding.x + ImGui::CalcTextSize("(c)2021 JDSherbert. All rights reserved.").x;
 		ImGui::SetCursorPos(ImVec2(400 - _X, ImGui::GetCursorPos().y));
-		ImGui::Text("(c)2023 JDSherbert. All Rights Reserved.");
+		ImGui::Text("(c)2021 JDSherbert. All rights reserved.");
 	}
 	ImGui::End();
 }
@@ -73,7 +72,7 @@ void AboutWindow::Init()
 		scratchImage.GetImages(),
 		scratchImage.GetImageCount(),
 		scratchImage.GetMetadata(),
-		&_StarBanner)))
+		&_SherbertBanner)))
 		SherbertHelpers::AddLog("[About] -> Failed to create shader resource view from scratch image!");
 
 	scratchImage.Release();
@@ -84,5 +83,5 @@ void AboutWindow::Init()
 
 void AboutWindow::Shutdown()
 {
-	if (_StarBanner) _StarBanner->Release();
+	if (_SherbertBanner) _SherbertBanner->Release();
 }
