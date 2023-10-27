@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\Module\Module.h" />
+    <ClInclude Include="Source\System\ScriptingSystem.h" />
+    <ClInclude Include="Source\System\ProjectSceneSystem.h" />
+    <ClInclude Include="Source\Cosmetic\Splash.h" />
+    <ClInclude Include="Source\Editor\Window\About.h" />
+    <ClInclude Include="Source\System\ModelSystem.h" />
+    <ClInclude Include="Source\System\PhysicsSystem.h" />
+    <ClInclude Include="Source\ECS\Component\RigidBodyComponent.h" />
+    <ClInclude Include="Source\Editor\Window\Console.h" />
+    <ClInclude Include="Source\ECS\Component\CameraComponent.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Model\AssimpLoader.h" />
+    <ClInclude Include="Source\Sky\Sky.h" />
+    <ClInclude Include="Source\Editor\Window\File.h" />
+    <ClInclude Include="Source\Imguizmo\ImGuizmo.h" />
+    <ClInclude Include="Source\ECS\Component\MeshComponent.h" />
+    <ClInclude Include="Source\Editor\Window\Inspector.h" />
+    <ClInclude Include="Source\Editor\Window\Hierarchy.h" />
+    <ClInclude Include="Source\ECS\Component\Component.h" />
+    <ClInclude Include="Source\ECS\Entity.h" />
+    <ClInclude Include="Source\Editor\Window\Assets.h" />
+    <ClInclude Include="Source\Editor\Editor.h" />
+    <ClInclude Include="Source\Core\Utils.h" />
+    <ClInclude Include="Source\DirectX\DX.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Imgui\imconfig.h" />
+    <ClInclude Include="Source\Imgui\imgui.h" />
+    <ClInclude Include="Source\Imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Source\Imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Source\Imgui\imgui_internal.h" />
+    <ClInclude Include="Source\Imgui\imgui_stdlib.h" />
+    <ClInclude Include="Source\Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Source\Imgui\imstb_textedit.h" />
+    <ClInclude Include="Source\Imgui\imstb_truetype.h" />
+    <ClInclude Include="Source\Core\Main.h" />
+    <ClInclude Include="Source\TTF2MESH\ttf2mesh.h" />
+    <ClInclude Include="Source\XTK\Audio\WAVFileReader.h" />
+    <ClInclude Include="Source\XTK\DDSTextureLoader11.h" />
+    <ClInclude Include="Source\XTK\Math\SimpleMath.h" />
+    <ClInclude Include="Source\XTK\pch.h" />
+    <ClInclude Include="Source\XTK\Tex\BC.h" />
+    <ClInclude Include="Source\XTK\Tex\d3dx12.h" />
+    <ClInclude Include="Source\XTK\Tex\DDS.h" />
+    <ClInclude Include="Source\XTK\Tex\DirectXTex.h" />
+    <ClInclude Include="Source\XTK\Tex\DirectXTexP.h" />
+    <ClInclude Include="Source\XTK\Tex\filters.h" />
+    <ClInclude Include="Source\XTK\Tex\scoped.h" />
+    <ClInclude Include="Source\XTK\WICTextureLoader11.h" />
+    <ClInclude Include="Source\Editor\Window\Viewport.h" />
+    <ClInclude Include="Source\ECS\Component\TransformComponent.h" />
+    <ClInclude Include="Source\ECS\Component\TextMeshComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Module\Module.cpp" />
+    <ClCompile Include="Source\System\ScriptingSystem.cpp" />
+    <ClCompile Include="Source\System\ProjectSceneSystem.cpp" />
+    <ClCompile Include="Source\Cosmetic\Splash.cpp" />
+    <ClCompile Include="Source\Editor\Window\About.cpp" />
+    <ClCompile Include="Source\System\ModelSystem.cpp" />
+    <ClCompile Include="Source\System\PhysicsSystem.cpp" />
+    <ClCompile Include="Source\ECS\Component\RigidBodyComponent.cpp" />
+    <ClCompile Include="Source\Editor\Window\Console.cpp" />
+    <ClCompile Include="Source\ECS\Component\CameraComponent.cpp" />
+    <ClCompile Include="Source\Game\Game.cpp" />
+    <ClCompile Include="Source\Model\AssimpLoader.cpp" />
+    <ClCompile Include="Source\Sky\Sky.cpp" />
+    <ClCompile Include="Source\Editor\Window\File.cpp" />
+    <ClCompile Include="Source\Imguizmo\ImGuizmo.cpp" />
+    <ClCompile Include="Source\ECS\Component\MeshComponent.cpp" />
+    <ClCompile Include="Source\Editor\Window\Inspector.cpp" />
+    <ClCompile Include="Source\Editor\Window\Hierarchy.cpp" />
+    <ClCompile Include="Source\ECS\Component\Component.cpp" />
+    <ClCompile Include="Source\ECS\Entity.cpp" />
+    <ClCompile Include="Source\Editor\Window\Assets.cpp" />
+    <ClCompile Include="Source\Editor\Editor.cpp" />
+    <ClCompile Include="Source\Core\Utils.cpp" />
+    <ClCompile Include="Source\DirectX\DX.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Imgui\imgui.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_tables.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\Core\Main.cpp" />
+    <ClCompile Include="Source\TTF2MESH\ttf2mesh.c" />
+    <ClCompile Include="Source\XTK\Audio\WAVFileReader.cpp" />
+    <ClCompile Include="Source\XTK\DDSTextureLoader11.cpp" />
+    <ClCompile Include="Source\XTK\Math\SimpleMath.cpp" />
+    <ClCompile Include="Source\XTK\pch.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC4BC5.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC6HBC7.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexCompress.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexConvert.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexD3D11.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexD3D12.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexDDS.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexFlipRotate.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexHDR.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexImage.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexMipmaps.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexMisc.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexNormalMaps.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexPMAlpha.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexResize.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexTGA.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexUtil.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexWIC.cpp" />
+    <ClCompile Include="Source\XTK\WICTextureLoader11.cpp" />
+    <ClCompile Include="Source\Editor\Window\Viewport.cpp" />
+    <ClCompile Include="Source\ECS\Component\TransformComponent.cpp" />
+    <ClCompile Include="Source\ECS\Component\TextMeshComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\XTK\Math\SimpleMath.inl" />
+    <None Include="Source\XTK\Tex\DirectXTex.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SherbertEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Images\SherbertEngineIcon.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{90a81c2a-bfa2-4dc5-b2e9-650f19b2caec}</ProjectGuid>
+    <RootNamespace>SherbertEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>SherbertEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>SherbertEngine</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>SherbertEngine</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include\lua;$(ProjectDir)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include\lua;$(ProjectDir)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DX\STAR\ENGINE\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
