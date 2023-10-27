@@ -12,3 +12,6 @@ x64
 # Visual Studio bullshittery
 .vs
 *.aps
+
+# Imgui ini
+SherbertEngine/imgui.ini
