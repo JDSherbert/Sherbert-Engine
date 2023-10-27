@@ -17,15 +17,15 @@ static DX* dx = &DXClass();
 static Sky* sky = &SkyClass();
 static Editor* editor = &EditorClass();
 
-#define FOLDER_ICON_PATH   L"DATA\\Icons\\64px\\Folder.dds"   /**/
-#define IMAGE_ICON_PATH    L"DATA\\Icons\\64px\\Image.dds"    /**/
-#define FILE_ICON_PATH     L"DATA\\Icons\\64px\\File.dds"     /**/
-#define LUA_ICON_PATH      L"DATA\\Icons\\64px\\Lua.dds"      /**/
-#define MODEL_ICON_PATH    L"DATA\\Icons\\64px\\Model.dds"    /**/
-#define FONT_ICON_PATH     L"DATA\\Icons\\64px\\Font.dds"     /**/
-#define AUDIO_ICON_PATH    L"DATA\\Icons\\64px\\Audio.dds"    /**/
-#define SKY_ICON_PATH      L"DATA\\Icons\\64px\\Sky.dds"      /**/
-#define MATERIAL_ICON_PATH L"DATA\\Icons\\64px\\Material.dds" /**/
+#define FOLDER_ICON_PATH   L"Resources\\Icons\\64px\\Folder.dds"   /**/
+#define IMAGE_ICON_PATH    L"Resources\\Icons\\64px\\Image.dds"    /**/
+#define FILE_ICON_PATH     L"Resources\\Icons\\64px\\File.dds"     /**/
+#define LUA_ICON_PATH      L"Resources\\Icons\\64px\\Lua.dds"      /**/
+#define MODEL_ICON_PATH    L"Resources\\Icons\\64px\\Model.dds"    /**/
+#define FONT_ICON_PATH     L"Resources\\Icons\\64px\\Font.dds"     /**/
+#define AUDIO_ICON_PATH    L"Resources\\Icons\\64px\\Audio.dds"    /**/
+#define SKY_ICON_PATH      L"Resources\\Icons\\64px\\Sky.dds"      /**/
+#define MATERIAL_ICON_PATH L"Resources\\Icons\\64px\\Material.dds" /**/
 
 void AssetsWindow::Init()
 {
@@ -678,7 +678,7 @@ void AssetsWindow::SaveMaterialFile(std::string path, const MaterialBuffer& buff
 
 	out << YAML::BeginMap;
 	{
-		out << YAML::Key << "STAR" << YAML::Value << YAML::BeginMap;
+		out << YAML::Key << "SHERBERT" << YAML::Value << YAML::BeginMap;
 		{
 			out << YAML::Key << "VERSION" << YAML::Value << YAML::BeginMap;
 			{
@@ -687,7 +687,7 @@ void AssetsWindow::SaveMaterialFile(std::string path, const MaterialBuffer& buff
 				out << YAML::Key << "PATCH" << YAML::Value << PATCH;
 			}
 			out << YAML::EndMap;
-			out << YAML::Key << "DATA" << YAML::Value << YAML::BeginMap;
+			out << YAML::Key << "RESOURCE" << YAML::Value << YAML::BeginMap;
 			{
 				out << YAML::Key << "DIFFUSE" << YAML::Value << YAML::BeginMap;
 				{
@@ -713,10 +713,10 @@ void AssetsWindow::OpenMaterialFile(std::string path, MaterialBuffer& buffer)
 {
 	YAML::Node data = YAML::LoadFile(path.c_str());
 
-	if (!data["STAR"])
+	if (!data["SHERBERT"])
 		return;
 
-	std::string DiffusePath = data["STAR"]["DATA"]["DIFFUSE"]["TEXTURE_PATH"].as<std::string>();
+	std::string DiffusePath = data["SHERBERT"]["RESOURCE"]["DIFFUSE"]["TEXTURE_PATH"].as<std::string>();
 	buffer.DiffusePath = DiffusePath;
 }
 

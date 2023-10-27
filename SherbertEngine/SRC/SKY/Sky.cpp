@@ -29,9 +29,9 @@ static ConstantBuffer cb;
 
 bool Sky::Init()
 {
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"DATA\\Shaders\\Sky\\vs.hlsl", "main", VS_VERSION, &VS)))
+	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\vs.hlsl", "main", VS_VERSION, &VS)))
 		return false;
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"DATA\\Shaders\\Sky\\ps.hlsl", "main", PS_VERSION, &PS)))
+	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\ps.hlsl", "main", PS_VERSION, &PS)))
 		return false;
 	if (FAILED(dx->dxDevice->CreateVertexShader(VS->GetBufferPointer(), VS->GetBufferSize(), nullptr, &pVS)))
 		return false;
@@ -94,7 +94,7 @@ bool Sky::Init()
 			return false;
 	}
 
-	sphereModel = assimpLoader->LoadRawModel("DATA\\Models\\Sphere.obj");
+	sphereModel = assimpLoader->LoadRawModel("Resources\\Models\\Sphere.obj");
 
 	{
 		D3D11_BUFFER_DESC desc;

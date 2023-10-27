@@ -25,9 +25,9 @@ bool ModelSystem::Init()
 	ID3DBlob* VS = nullptr;
 	ID3DBlob* PS = nullptr;
 
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"DATA\\Shaders\\Model\\vs.hlsl", ENTRY_POINT, VS_VERSION, &VS)))
+	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Model\\vs.hlsl", ENTRY_POINT, VS_VERSION, &VS)))
 		return false;
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"DATA\\Shaders\\Model\\ps.hlsl", ENTRY_POINT, PS_VERSION, &PS)))
+	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Model\\ps.hlsl", ENTRY_POINT, PS_VERSION, &PS)))
 		return false;
 	if (FAILED(dx->dxDevice->CreateVertexShader(VS->GetBufferPointer(), VS->GetBufferSize(), nullptr, &pVS)))
 		return false;

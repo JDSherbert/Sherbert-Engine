@@ -249,7 +249,7 @@ void EngineStart()
     dx->dxDeviceContext->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
     SkyFile skyFile;
-    skyFile.SetSpherePath("DATA\\HDRIs\\RenderCrate-HDRI_Orbital_14_4K.hdr");
+    skyFile.SetSpherePath("Resources\\HDRIs\\RenderCrate-HDRI_Orbital_14_4K.hdr");
     sky->SetSky(skyFile);
 
     game->InitTime();

@@ -13,10 +13,10 @@
 #include "../SYSTEM/PhysicsSystem.h"
 #include "../MODEL/AssimpLoader.h"
 
-#define CUBE_MODEL "DATA\\Models\\Cube.obj"
-#define SPHERE_MODEL "DATA\\Models\\Sphere.obj"
-#define CAPSULE_MODEL "DATA\\Models\\Capsule.obj"
-#define PLANE_MODEL "DATA\\Models\\Plane.obj"
+#define CUBE_MODEL      "Resources\\Models\\Cube.obj"
+#define SPHERE_MODEL    "Resources\\Models\\Sphere.obj"
+#define CAPSULE_MODEL   "Resources\\Models\\Capsule.obj"
+#define PLANE_MODEL     "Resources\\Models\\Plane.obj"
 
 Entity entity;
 
@@ -168,7 +168,7 @@ void Entity::CreateTextMeshEntity(entt::entity entity)
 {
     GetComponent<GeneralComponent>(entity).SetName("TextMesh");
     AddComponent<TextMeshComponent>(entity);
-    GetComponent<TextMeshComponent>(entity).SetText("hello");
+    GetComponent<TextMeshComponent>(entity).SetText("Hello World!");
     GetComponent<GeneralComponent>(root).AddChild(entity);
 }
 

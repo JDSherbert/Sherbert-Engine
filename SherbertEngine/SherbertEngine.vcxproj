@@ -144,7 +144,7 @@
     <ResourceCompile Include="SherbertEngine.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="DATA\Images\SherbertEngineIcon.ico" />
+    <Image Include="Resources\Images\SherbertEngineIcon.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

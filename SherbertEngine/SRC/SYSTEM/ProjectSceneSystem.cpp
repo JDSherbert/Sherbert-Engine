@@ -6,7 +6,7 @@
 #include <fstream>
 #include "../MAIN/Main.h"
 
-#define XFILE "C:\\DX\\STAR\\ENGINE\\data.scene"
+#define XFILE "C:\\DX\\SHERBERT\\ENGINE\\data.scene"
 
 static ProjectSceneSystem projectSceneSystem;
 
@@ -50,7 +50,7 @@ void ProjectSceneSystem::SaveScene()
 
 	out << YAML::BeginMap;
 	{
-		out << YAML::Key << "STAR" << YAML::Value << YAML::BeginMap;
+		out << YAML::Key << "SHERBERT" << YAML::Value << YAML::BeginMap;
 		{
 			out << YAML::Key << "VERSION" << YAML::Value << YAML::BeginMap;
 			{
@@ -80,7 +80,7 @@ void ProjectSceneSystem::OpenScene()
 
 	YAML::Node in = YAML::LoadFile(XFILE);
 
-	if (!in["STAR"]) return;
+	if (!in["SHERBERT"]) return;
 }
 
 void ProjectSceneSystem::SerializeEntity(YAML::Emitter& out, entt::entity entity)

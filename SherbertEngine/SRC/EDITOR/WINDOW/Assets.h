@@ -27,7 +27,7 @@
 #define SKY ".sky"
 #define MAT ".mat"
 
-#define FOLDER "\\ASSETS"
+#define FOLDER "\\Assets"
 
 struct FILEs
 {

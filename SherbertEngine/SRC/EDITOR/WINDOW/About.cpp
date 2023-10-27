@@ -62,7 +62,7 @@ void AboutWindow::Init()
 {
 	DirectX::ScratchImage scratchImage;
 	if (FAILED(DirectX::LoadFromWICFile(
-		L"DATA\\Images\\SherbertEngineIcon84x84.png",
+		L"Resources\\Images\\SherbertEngineIcon84x84.png",
 		DirectX::WIC_FLAGS_NONE,
 		NULL,
 		scratchImage)))
