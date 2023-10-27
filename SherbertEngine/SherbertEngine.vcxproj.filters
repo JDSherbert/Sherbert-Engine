@@ -168,9 +168,6 @@
     <ClInclude Include="SRC\MODULE\Module.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SRC\MAIN\Main.cpp">
@@ -367,21 +364,5 @@
     <None Include="SRC\XTK\TEX\DirectXTex.inl">
       <Filter>Header Files</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="DATA\Images\SherbertEngineIcon.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="DATA\Images\SherbertEngineIcon84x84.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="DATA\Images\SplashScreen.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="SherbertEngine.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>
