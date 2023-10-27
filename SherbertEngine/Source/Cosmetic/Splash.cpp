@@ -1,19 +1,22 @@
-#include "SplashScreen.h"
-#include "../DX/DX.h"
-#include "../HELPERS/Helpers.h"
+//©2021 JDSherbert. All Rights Reserved.
 
-static SplashScreen splashScreen;
+#include "Splash.h"
 
-SplashScreen& SplashScreenClass()
+#include "../DirectX/DX.h"
+#include "../Core/Utils.h"
+
+static Splash splash;
+
+Splash& SplashScreenClass()
 {
-	return splashScreen;
+	return splash;
 }
 
 ///////////////////////////////////////////////////////////////
 
 static DX* dx = &DXClass();
 
-bool SplashScreen::ShowSplashScreen()
+bool Splash::ShowSplashScreen()
 {
 	WNDCLASSEX wcex;
 	ZeroMemory(&wcex, sizeof(WNDCLASSEX));
@@ -34,8 +37,8 @@ bool SplashScreen::ShowSplashScreen()
 	if (!RegisterClassEx(&wcex))
 		return false;
 
-	int x = (SherbertHelpers::GetDisplayWidth() - width) / 2;
-	int y = (SherbertHelpers::GetDisplayHeight() - height) / 2;
+	int x = (Utils::GetDisplayWidth() - width) / 2;
+	int y = (Utils::GetDisplayHeight() - height) / 2;
 
 	hwnd = CreateWindowEx(
 		WS_EX_TOPMOST,
@@ -76,7 +79,7 @@ bool SplashScreen::ShowSplashScreen()
 	return true;
 }
 
-void SplashScreen::HideSplashScreen()
+void Splash::HideSplashScreen()
 {
 	DestroyWindow(hwnd);
 	UnregisterClass(name.c_str(), *dx->hInstance);

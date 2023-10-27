@@ -1,5 +1,8 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "CameraComponent.h"
-#include "../../GAME/Game.h"
+
+#include "../../Game/Game.h"
 #include "TransformComponent.h"
 #include <entt/entt.hpp>
 #include "../Entity.h"

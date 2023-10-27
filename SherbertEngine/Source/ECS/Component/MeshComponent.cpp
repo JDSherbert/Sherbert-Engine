@@ -1,9 +1,12 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "MeshComponent.h"
-#include "../../HELPERS/Helpers.h"
-#include "../../EDITOR/WINDOW/Viewport.h"
-#include "../../ENTITY/COMPONENT/TransformComponent.h"
-#include "../../EDITOR/WINDOW/Assets.h"
-#include "../../SYSTEM/ModelSystem.h"
+
+#include "../../Core/Utils.h"
+#include "../../Editor/Window/Viewport.h"
+#include "../../ECS/Component/TransformComponent.h"
+#include "../../Editor/Window/Assets.h"
+#include "../../System/ModelSystem.h"
 
 static DX* dx = &DXClass();
 static Entity* ecs = &EntityClass();
@@ -299,7 +302,7 @@ void MeshComponent::AddMeshMaterial(std::string path)
 			DirectX::CreateWICTextureFromFile(
 				dx->dxDevice,
 				dx->dxDeviceContext,
-				SherbertHelpers::ConvertString(path).c_str(),
+				Utils::ConvertString(path).c_str(),
 				nullptr,
 				&diffuse_texture);
 		}
@@ -310,14 +313,14 @@ void MeshComponent::AddMeshMaterial(std::string path)
 			DirectX::CreateDDSTextureFromFile(
 				dx->dxDevice,
 				dx->dxDeviceContext,
-				SherbertHelpers::ConvertString(path).c_str(),
+				Utils::ConvertString(path).c_str(),
 				nullptr,
 				&diffuse_texture);
 		}
 	}
 	else
 	{
-		SherbertHelpers::AddLog("Error!");
+		Utils::AddLog("Error!");
 	}
 }
 

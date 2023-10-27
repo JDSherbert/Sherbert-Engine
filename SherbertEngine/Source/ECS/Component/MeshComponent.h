@@ -1,13 +1,15 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <vector>
 #include <d3d11.h>
 #include <DirectXMath.h>
-#include "../../DX/DX.h"
-#include "../../IMGUI/imgui.h"
-#include "../../ENTITY/Entity.h"
-#include "../../XTK/MATH/SimpleMath.h"
-#include "../../IMGUI/imgui_stdlib.h"
+#include "../../DirectX/DX.h"
+#include "../../Imgui/imgui.h"
+#include "../../ECS/Entity.h"
+#include "../../XTK/Math/SimpleMath.h"
+#include "../../Imgui/imgui_stdlib.h"
 #include <yaml-cpp/yaml.h>
 #include <wrl/client.h>
 

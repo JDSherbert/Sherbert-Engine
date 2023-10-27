@@ -1,5 +1,8 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "TransformComponent.h"
-#include "GeneralComponent.h"
+
+#include "Component.h"
 #include "RigidbodyComponent.h"
 
 static Entity* ecs = &EntityClass();
@@ -41,9 +44,9 @@ void TransformComponent::Render()
 				if (ImGui::DragFloat3("##PositionTransformComponent", (float*)&position, viewportWindow->useSnap ? viewportWindow->snap : 0.1f))
 					SetPosition(position);
 
-				Vector3 rotation = SherbertHelpers::ToDegrees(localTransform.rotation.ToEuler());
+				Vector3 rotation = Utils::ToDegrees(localTransform.rotation.ToEuler());
 				if (ImGui::DragFloat3("##RotationTransformComponent", (float*)&rotation, viewportWindow->useSnap ? viewportWindow->snap : 0.1f))
-					SetRotationYawPitchRoll(SherbertHelpers::ToRadians(rotation));
+					SetRotationYawPitchRoll(Utils::ToRadians(rotation));
 
 				Vector3 scale = localTransform.scale;
 				if (ImGui::DragFloat3("##ScaleTransformComponent", (float*)&scale, viewportWindow->useSnap ? viewportWindow->snap : 0.1f, 0.0f, FLT_MAX))
@@ -79,8 +82,8 @@ void TransformComponent::SetPosition(Vector3 position)
 
 void TransformComponent::SetRotationYawPitchRoll(Vector3 rotation)
 {
-	if (SherbertHelpers::RadToDeg(rotation.x) > 90.0f) rotation.x = SherbertHelpers::DegToRad(90.0f);
-	if (SherbertHelpers::RadToDeg(rotation.x) < -90.0f) rotation.x = SherbertHelpers::DegToRad(-90.0f);
+	if (Utils::RadToDeg(rotation.x) > 90.0f) rotation.x = Utils::DegToRad(90.0f);
+	if (Utils::RadToDeg(rotation.x) < -90.0f) rotation.x = Utils::DegToRad(-90.0f);
 
 	localTransform.rotation = Quaternion::CreateFromYawPitchRoll(rotation.y, rotation.x, rotation.z);
 	UpdateTransformFromPositionRotationScale();
@@ -244,9 +247,9 @@ void TransformComponent::SerializeComponent(YAML::Emitter& out)
 	out << YAML::Key << "TransformComponent";
 	out << YAML::BeginMap;
 	{
-		out << YAML::Key << "Position"; SherbertHelpers::SerializeVector3(out, GetLocalPosition());
-		out << YAML::Key << "Rotation"; SherbertHelpers::SerializeQuaternion(out, GetLocalRotationQuaternion());
-		out << YAML::Key << "Scale"; SherbertHelpers::SerializeVector3(out, GetLocalScale());
+		out << YAML::Key << "Position"; Utils::SerializeVector3(out, GetLocalPosition());
+		out << YAML::Key << "Rotation"; Utils::SerializeQuaternion(out, GetLocalRotationQuaternion());
+		out << YAML::Key << "Scale"; Utils::SerializeVector3(out, GetLocalScale());
 	}
 	out << YAML::EndMap;
 }
@@ -254,11 +257,11 @@ void TransformComponent::SerializeComponent(YAML::Emitter& out)
 void TransformComponent::DeserializeComponent(YAML::Node& in)
 {
 	auto position = in["Position"];
-	SetPosition(SherbertHelpers::DeserializeVector3(position));
+	SetPosition(Utils::DeserializeVector3(position));
 	auto rotation = in["Rotation"];
-	SetRotationQuaternion(SherbertHelpers::DeserializeQuaternion(rotation));
+	SetRotationQuaternion(Utils::DeserializeQuaternion(rotation));
 	auto scale = in["Scale"];
-	SetScale(SherbertHelpers::DeserializeVector3(scale));
+	SetScale(Utils::DeserializeVector3(scale));
 }
 
 void TransformComponent::LookAt(TransformComponent transform, Vector3 up)

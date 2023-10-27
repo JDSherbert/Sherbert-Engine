@@ -1,14 +1,17 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "TextMeshComponent.h"
+
 #include "../Entity.h"
-#include "GeneralComponent.h"
+#include "Component.h"
 #include "TransformComponent.h"
 #include "MeshComponent.h"
-#include "../../EDITOR/Editor.h"
+#include "../../Editor/Editor.h"
 #include <IconFontCppHeaders/IconsFontAwesome5.h>
 #include <filesystem>
-#include "../../EDITOR/WINDOW/Assets.h"
-#include "../../EDITOR/WINDOW/Console.h"
-#include "../../MAIN/Main.h"
+#include "../../Editor/Window/Assets.h"
+#include "../../Editor/Window/Console.h"
+#include "../../Core/Main.h"
 
 static Entity* ecs = &EntityClass();
 static Editor* editor = &EditorClass();
@@ -172,7 +175,7 @@ void TextMeshComponent::Render()
 bool TextMeshComponent::SetupTextMesh()
 {
 	entt::entity entity = entt::to_entity(ecs->registry, *this); /* get this entity */
-	ecs->registry.get<GeneralComponent>(entity).DestroyChildren();  /* destroy all child */
+	ecs->registry.get<Component>(entity).DestroyChildren();  /* destroy all child */
 
 	offset = ImVec2(NULL, NULL);
 
@@ -225,11 +228,11 @@ bool TextMeshComponent::SetupTextMesh()
 				return false;
 
 			auto glyph = ecs->registry.create();
-			ecs->registry.emplace<GeneralComponent>(glyph);
+			ecs->registry.emplace<Component>(glyph);
 			ecs->registry.emplace<TransformComponent>(glyph);
 			ecs->registry.emplace<MeshComponent>(glyph);
-			ecs->registry.get<GeneralComponent>(glyph).SetName(std::to_string(buffer[i]));
-			ecs->registry.get<GeneralComponent>(entity).AddChild(glyph);
+			ecs->registry.get<Component>(glyph).SetName(std::to_string(buffer[i]));
+			ecs->registry.get<Component>(entity).AddChild(glyph);
 
 			ecs->registry.get<TransformComponent>(glyph).SetPosition(Vector3(offset.x, offset.y, 0.0f));
 

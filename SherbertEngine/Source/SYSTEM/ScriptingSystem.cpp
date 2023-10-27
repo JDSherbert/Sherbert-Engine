@@ -1,15 +1,18 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "ScriptingSystem.h"
-#include "../HELPERS/Helpers.h"
-#include "../EDITOR/WINDOW/Console.h"
+
+#include "../Core/Utils.h"
+#include "../Editor/Window/Console.h"
 #include <fstream>
 #include <filesystem>
-#include "../EDITOR/WINDOW/Assets.h"
-#include "../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../GAME/Game.h"
-#include "../ENTITY/COMPONENT/TransformComponent.h"
-#include "../ENTITY/COMPONENT/CameraComponent.h"
-#include "../ENTITY/COMPONENT/RigidbodyComponent.h"
-#include "../ENTITY/COMPONENT/TextMeshComponent.h"
+#include "../Editor/Window/Assets.h"
+#include "../ECS/Component/Component.h"
+#include "../Game/Game.h"
+#include "../ECS/Component/TransformComponent.h"
+#include "../ECS/Component/CameraComponent.h"
+#include "../ECS/Component/RigidbodyComponent.h"
+#include "../ECS/Component/TextMeshComponent.h"
 
 #define COMPONENT_ERROR "Failed to get %s because it was not found!"
 
@@ -338,19 +341,19 @@ void ScriptingSystem::lua_add_entity()
 }
 void ScriptingSystem::lua_add_general_component()
 {
-	sol::usertype<GeneralComponent> component = lua.new_usertype<GeneralComponent>(
+	sol::usertype<Component> component = lua.new_usertype<Component>(
 		"GeneralComponent");
-	component["SetName"] = &GeneralComponent::SetName;
-	component["GetName"] = &GeneralComponent::GetName;
-	component["SetTag"] = &GeneralComponent::SetTag;
-	component["GetTag"] = &GeneralComponent::GetTag;
-	component["SetActive"] = &GeneralComponent::SetActive;
-	component["GetActive"] = &GeneralComponent::IsActive;
-	component["SetStatic"] = &GeneralComponent::SetStatic;
-	component["GetStatic"] = &GeneralComponent::IsStatic;
-	component["MoveUp"] = &GeneralComponent::MoveUp;
-	component["MoveDown"] = &GeneralComponent::MoveDown;
-	component["GetParentEntity"] = &GeneralComponent::GetParent;
+	component["SetName"] = &Component::SetName;
+	component["GetName"] = &Component::GetName;
+	component["SetTag"] = &Component::SetTag;
+	component["GetTag"] = &Component::GetTag;
+	component["SetActive"] = &Component::SetActive;
+	component["GetActive"] = &Component::IsActive;
+	component["SetStatic"] = &Component::SetStatic;
+	component["GetStatic"] = &Component::IsStatic;
+	component["MoveUp"] = &Component::MoveUp;
+	component["MoveDown"] = &Component::MoveDown;
+	component["GetParentEntity"] = &Component::GetParent;
 }
 void ScriptingSystem::lua_add_transform_component()
 {
@@ -608,7 +611,7 @@ void ScriptingComponent::lua_add_entity_from_component()
 void EntityX::CreateEntity()
 {
 	entity = ecs->CreateEntity();
-	ecs->GetComponent<GeneralComponent>(ecs->root).AddChild(entity);
+	ecs->GetComponent<Component>(ecs->root).AddChild(entity);
 }
 
 void EntityX::AddComponent(const char* component_name)
@@ -644,9 +647,9 @@ sol::object EntityX::GetComponent(const char* component_name)
 
 	if (strcmp(component_name, "GeneralComponent") == 0)
 	{
-		if (ecs->HasComponent<GeneralComponent>(entity))
+		if (ecs->HasComponent<Component>(entity))
 		{
-			auto& entt_comp = ecs->GetComponent<GeneralComponent>(entity);
+			auto& entt_comp = ecs->GetComponent<Component>(entity);
 			component = sol::make_object(scriptingSystem.GetState(), &entt_comp);
 		}
 		else consoleWindow->AddWarningMessage(COMPONENT_ERROR, component_name);

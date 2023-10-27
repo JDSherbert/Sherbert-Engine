@@ -1,14 +1,16 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include <d3d11.h>
 #include <Windows.h>
-#include "../IMGUI/imgui.h"
+#include "../Imgui/imgui.h"
 
 #define DIRECTINPUT_VERSION 0x0800
 #include <dinput.h>
 
-#include "../XTK/MATH/SimpleMath.h"
+#include "../XTK/Math/SimpleMath.h"
 using namespace DirectX::SimpleMath;
 
 enum GameState : unsigned char

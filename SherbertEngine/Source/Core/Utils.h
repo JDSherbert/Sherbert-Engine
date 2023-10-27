@@ -1,3 +1,5 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #define DIRECTINPUT_VERSION 0x0800
@@ -6,7 +8,7 @@
 #include <Windows.h>
 #include <DirectXMath.h>
 #include <d3dcompiler.h>
-#include "../XTK/MATH/SimpleMath.h"
+#include "../XTK/Math/SimpleMath.h"
 #include <physx/PxPhysicsAPI.h>
 #include <yaml-cpp/yaml.h>
 
@@ -20,7 +22,7 @@ using namespace DirectX::SimpleMath;
 #define FIXED_SPACING 64
 #define BUTTON_SPACING 26
 
-namespace SherbertHelpers
+namespace Utils
 {
 	RECT GetClientRect();
 	UINT GetDisplayWidth();

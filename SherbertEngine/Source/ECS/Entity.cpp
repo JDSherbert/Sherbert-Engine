@@ -1,17 +1,20 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Entity.h"
+
 #include <vector>
-#include "../HELPERS/Helpers.h"
-#include "COMPONENT/MeshComponent.h"
+#include "../Core/Utils.h"
+#include "Component/MeshComponent.h"
 #include "../XTK/WICTextureLoader11.h"
-#include "COMPONENT/GeneralComponent.h"
-#include "COMPONENT/TransformComponent.h"
-#include "COMPONENT/RigidbodyComponent.h"
-#include "COMPONENT/CameraComponent.h"
-#include "COMPONENT/TextMeshComponent.h"
-#include "../SYSTEM/ProjectSceneSystem.h"
-#include "../SYSTEM/ScriptingSystem.h"
-#include "../SYSTEM/PhysicsSystem.h"
-#include "../MODEL/AssimpLoader.h"
+#include "Component/Component.h"
+#include "Component/TransformComponent.h"
+#include "Component/RigidbodyComponent.h"
+#include "Component/CameraComponent.h"
+#include "Component/TextMeshComponent.h"
+#include "../System/ProjectSceneSystem.h"
+#include "../System/ScriptingSystem.h"
+#include "../System/PhysicsSystem.h"
+#include "../Model/AssimpLoader.h"
 
 #define CUBE_MODEL      "Resources\\Models\\Cube.obj"
 #define SPHERE_MODEL    "Resources\\Models\\Sphere.obj"
@@ -36,19 +39,19 @@ static std::vector<Mesh> plane;
 bool Entity::Init()
 {
     root = CreateEntity();
-	GetComponent<GeneralComponent>(root).SetName("Scene");
+	GetComponent<Component>(root).SetName("Scene");
     projectSceneSystem->NewScene();
     return true;
 }
 
 void Entity::CreateEmptyEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Empty");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(entity).SetName("Empty");
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreateCubeEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Cube");
+    GetComponent<Component>(entity).SetName("Cube");
 	AddComponent<MeshComponent>(entity);
 	auto& meshComponent = GetComponent<MeshComponent>(entity);
 
@@ -72,11 +75,11 @@ void Entity::CreateCubeEntity(entt::entity entity)
     meshComponent.SetupMesh();
     meshComponent.SetFileName(CUBE_MODEL);
     meshComponent.SetMeshName("Cube");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreateSphereEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Sphere");
+    GetComponent<Component>(entity).SetName("Sphere");
     AddComponent<MeshComponent>(entity);
     auto& meshComponent = GetComponent<MeshComponent>(entity);
 
@@ -100,11 +103,11 @@ void Entity::CreateSphereEntity(entt::entity entity)
     meshComponent.SetupMesh();
     meshComponent.SetFileName(SPHERE_MODEL);
     meshComponent.SetMeshName("Sphere");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreateCapsuleEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Capsule");
+    GetComponent<Component>(entity).SetName("Capsule");
     AddComponent<MeshComponent>(entity);
     auto& meshComponent = GetComponent<MeshComponent>(entity);
 
@@ -128,11 +131,11 @@ void Entity::CreateCapsuleEntity(entt::entity entity)
     meshComponent.SetupMesh();
     meshComponent.SetFileName(CAPSULE_MODEL);
     meshComponent.SetMeshName("Capsule");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreatePlaneEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Plane");
+    GetComponent<Component>(entity).SetName("Plane");
     AddComponent<MeshComponent>(entity);
     auto& meshComponent = GetComponent<MeshComponent>(entity);
 
@@ -156,20 +159,20 @@ void Entity::CreatePlaneEntity(entt::entity entity)
     meshComponent.SetupMesh();
     meshComponent.SetFileName(PLANE_MODEL);
     meshComponent.SetMeshName("Plane");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreateCameraEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("Camera");
+    GetComponent<Component>(entity).SetName("Camera");
     AddComponent<CameraComponent>(entity);
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 void Entity::CreateTextMeshEntity(entt::entity entity)
 {
-    GetComponent<GeneralComponent>(entity).SetName("TextMesh");
+    GetComponent<Component>(entity).SetName("TextMesh");
     AddComponent<TextMeshComponent>(entity);
     GetComponent<TextMeshComponent>(entity).SetText("Hello World!");
-    GetComponent<GeneralComponent>(root).AddChild(entity);
+    GetComponent<Component>(root).AddChild(entity);
 }
 
 void Entity::LoadCoreModels()
@@ -184,7 +187,7 @@ entt::entity Entity::CreateEntity()
 {
     entt::entity entity = entt::null;
     entity = registry.create();
-    AddComponent<GeneralComponent>(entity);
+    AddComponent<Component>(entity);
     AddComponent<TransformComponent>(entity);
     AddComponent<ScriptingComponent>(entity);
     AddComponent<PhysicsComponent>(entity);

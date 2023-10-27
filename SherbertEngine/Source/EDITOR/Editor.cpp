@@ -1,19 +1,21 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Editor.h"
 
-#include "WINDOW/File.h"
-#include "WINDOW/Assets.h"
-#include "WINDOW/Viewport.h"
-#include "WINDOW/Inspector.h"
-#include "WINDOW/Hierarchy.h"
-#include "../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../GAME/Game.h"
-#include "WINDOW/Console.h"
-#include "../MAIN/Main.h"
-#include "WINDOW/About.h"
-#include "../SYSTEM/ProjectSceneSystem.h"
-#include "../SYSTEM/ScriptingSystem.h"
+#include "Window/File.h"
+#include "Window/Assets.h"
+#include "Window/Viewport.h"
+#include "Window/Inspector.h"
+#include "Window/Hierarchy.h"
+#include "../ECS/Component/Component.h"
+#include "../Game/Game.h"
+#include "Window/Console.h"
+#include "../Core/Main.h"
+#include "Window/About.h"
+#include "../System/ProjectSceneSystem.h"
+#include "../System/ScriptingSystem.h"
 #include <wincodec.h>
-#include "../MODULE/Module.h"
+#include "../Module/Module.h"
 
 static Editor editor;
 
@@ -178,8 +180,8 @@ void Editor::RenderDownBar()
 		| ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove
 		| ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse;
 
-	ImGui::SetNextWindowPos(ImVec2(0.0f, (float)SherbertHelpers::GetContextHeight() - WINDOW_DOWN));
-	ImGui::SetNextWindowSize(ImVec2((float)SherbertHelpers::GetContextWidth(), WINDOW_DOWN));
+	ImGui::SetNextWindowPos(ImVec2(0.0f, (float)Utils::GetContextHeight() - WINDOW_DOWN));
+	ImGui::SetNextWindowSize(ImVec2((float)Utils::GetContextWidth(), WINDOW_DOWN));
 
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 1.0f);
@@ -226,7 +228,7 @@ void Editor::RenderUpBar()
 		| ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse;
 
 	ImGui::SetNextWindowPos(ImVec2(0.f, mainMenuBarSize.y));
-	ImGui::SetNextWindowSize(ImVec2((float)SherbertHelpers::GetContextWidth(), WINDOW_DOWN));
+	ImGui::SetNextWindowSize(ImVec2((float)Utils::GetContextWidth(), WINDOW_DOWN));
 
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
 	ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 1.0f);
@@ -762,16 +764,16 @@ void Editor::RenderEntityMenuBar()
 			ImGui::Separator();
 			if (ImGui::MenuItem("Remove"))
 			{
-				ecs->GetComponent<GeneralComponent>(ecs->selected).Destroy();
+				ecs->GetComponent<Component>(ecs->selected).Destroy();
 			}
 			ImGui::Separator();
 			if (ImGui::MenuItem("Up"))
 			{
-				ecs->GetComponent<GeneralComponent>(ecs->selected).MoveUp();
+				ecs->GetComponent<Component>(ecs->selected).MoveUp();
 			}
 			if (ImGui::MenuItem("Down"))
 			{
-				ecs->GetComponent<GeneralComponent>(ecs->selected).MoveDown();
+				ecs->GetComponent<Component>(ecs->selected).MoveDown();
 			}
 		}
 		else

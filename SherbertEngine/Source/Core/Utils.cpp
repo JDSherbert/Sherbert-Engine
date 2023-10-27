@@ -1,26 +1,29 @@
-#include "Helpers.h"
+//©2021 JDSherbert. All Rights Reserved.
+
+#include "Utils.h"
+
 #include <string>
 #include <stdio.h>
 #include <filesystem>
-#include "../DX/DX.h"
-#include "../IMGUI/imgui.h"
-#include "../IMGUI/imgui_stdlib.h"
+#include "../DirectX/DX.h"
+#include "../Imgui/imgui.h"
+#include "../Imgui/imgui_stdlib.h"
 #include <shobjidl.h>
 #include <comdef.h>
 
 static DX* dx = &DXClass();
 
-UINT SherbertHelpers::GetDisplayWidth()
+UINT Utils::GetDisplayWidth()
 {
 	return GetSystemMetrics(SM_CXSCREEN);
 }
 
-UINT SherbertHelpers::GetDisplayHeight()
+UINT Utils::GetDisplayHeight()
 {
 	return GetSystemMetrics(SM_CYSCREEN);
 }
 
-UINT SherbertHelpers::GetContextWidth()
+UINT Utils::GetContextWidth()
 {
 	RECT rc;
 	GetClientRect(dx->hwnd, &rc);
@@ -28,7 +31,7 @@ UINT SherbertHelpers::GetContextWidth()
 	return width;
 }
 
-UINT SherbertHelpers::GetContextHeight()
+UINT Utils::GetContextHeight()
 {
 	RECT rc;
 	GetClientRect(dx->hwnd, &rc);
@@ -36,7 +39,7 @@ UINT SherbertHelpers::GetContextHeight()
 	return height;
 }
 
-void SherbertHelpers::AddLog(const char* text, ...)
+void Utils::AddLog(const char* text, ...)
 {
 	char buff[MAX_PATH];
 	va_list args;
@@ -47,7 +50,7 @@ void SherbertHelpers::AddLog(const char* text, ...)
 	OutputDebugStringA("\n");
 }
 
-HRESULT SherbertHelpers::CompileShaderFromFile(std::wstring srcFile, std::string entryPoint, std::string profile, ID3DBlob** blob)
+HRESULT Utils::CompileShaderFromFile(std::wstring srcFile, std::string entryPoint, std::string profile, ID3DBlob** blob)
 {
 	assert(!srcFile.empty());
 	assert(!entryPoint.empty());
@@ -78,7 +81,7 @@ HRESULT SherbertHelpers::CompileShaderFromFile(std::wstring srcFile, std::string
 	{
 		if (errorBlob)
 		{
-			SherbertHelpers::AddLog((char*)errorBlob->GetBufferPointer());
+			Utils::AddLog((char*)errorBlob->GetBufferPointer());
 			errorBlob->Release();
 		}
 
@@ -95,7 +98,7 @@ HRESULT SherbertHelpers::CompileShaderFromFile(std::wstring srcFile, std::string
 	return hr;
 }
 
-RECT SherbertHelpers::GetClientRect()
+RECT Utils::GetClientRect()
 {
 	RECT mainWindow;
 	GetClientRect(dx->hwnd, &mainWindow);
@@ -110,7 +113,7 @@ RECT SherbertHelpers::GetClientRect()
 	return clip;
 }
 
-HRESULT SherbertHelpers::CompileShaderFromSource(const char* data, std::string entryPoint, std::string profile, ID3DBlob** blob)
+HRESULT Utils::CompileShaderFromSource(const char* data, std::string entryPoint, std::string profile, ID3DBlob** blob)
 {
 	assert(data);
 	assert(!entryPoint.empty());
@@ -139,7 +142,7 @@ HRESULT SherbertHelpers::CompileShaderFromSource(const char* data, std::string e
 	{
 		if (errorBlob)
 		{
-			SherbertHelpers::AddLog((char*)errorBlob->GetBufferPointer());
+			Utils::AddLog((char*)errorBlob->GetBufferPointer());
 			errorBlob->Release();
 		}
 
@@ -156,7 +159,7 @@ HRESULT SherbertHelpers::CompileShaderFromSource(const char* data, std::string e
 	return hr;
 }
 
-std::wstring SherbertHelpers::ConvertString(std::string buffer)
+std::wstring Utils::ConvertString(std::string buffer)
 {
 	return std::wstring(buffer.begin(), buffer.end());
 }
@@ -165,7 +168,7 @@ static LPDIRECTINPUT8 gDirectInput;
 static IDirectInputDevice8* DIKeyboard;
 static IDirectInputDevice8* DIMouse;
 
-bool SherbertHelpers::InitInput()
+bool Utils::InitInput()
 {
 	if (FAILED(DirectInput8Create(*dx->hInstance,
 		DIRECTINPUT_VERSION,
@@ -199,7 +202,7 @@ bool SherbertHelpers::InitInput()
 	return true;
 }
 
-bool SherbertHelpers::InputGetKey(unsigned char key)
+bool Utils::InputGetKey(unsigned char key)
 {
 	if (DIKeyboard)
 	{
@@ -216,7 +219,7 @@ bool SherbertHelpers::InputGetKey(unsigned char key)
 	return false;
 }
 
-Vector2 SherbertHelpers::InputGetMouse()
+Vector2 Utils::InputGetMouse()
 {
 	if (DIMouse)
 	{
@@ -230,7 +233,7 @@ Vector2 SherbertHelpers::InputGetMouse()
 	return Vector2::Zero;
 }
 
-bool SherbertHelpers::InputAcquire()
+bool Utils::InputAcquire()
 {
 	if (DIKeyboard) if (FAILED(DIKeyboard->Acquire())) return false;
 	if (DIMouse)    if (FAILED(DIMouse->Acquire()))    return false;
@@ -238,7 +241,7 @@ bool SherbertHelpers::InputAcquire()
 	return true;
 }
 
-Vector3 SherbertHelpers::ToRadians(Vector3 rotation)
+Vector3 Utils::ToRadians(Vector3 rotation)
 {
 	using namespace DirectX;
 	return Vector3(
@@ -247,7 +250,7 @@ Vector3 SherbertHelpers::ToRadians(Vector3 rotation)
 		XMConvertToRadians(rotation.z));
 }
 
-Vector3 SherbertHelpers::ToDegrees(Vector3 rotation)
+Vector3 Utils::ToDegrees(Vector3 rotation)
 {
 	using namespace DirectX;
 	return Vector3(
@@ -256,27 +259,27 @@ Vector3 SherbertHelpers::ToDegrees(Vector3 rotation)
 		XMConvertToDegrees(rotation.z));
 }
 
-physx::PxVec3 SherbertHelpers::vector3_to_physics(Vector3 value)
+physx::PxVec3 Utils::vector3_to_physics(Vector3 value)
 {
 	return physx::PxVec3(value.x, value.y, value.z);
 }
 
-physx::PxQuat SherbertHelpers::quat_to_physics(Quaternion value)
+physx::PxQuat Utils::quat_to_physics(Quaternion value)
 {
 	return physx::PxQuat(value.x, value.y, value.z, value.w);
 }
 
-Vector3 SherbertHelpers::physics_to_vector3(physx::PxVec3 value)
+Vector3 Utils::physics_to_vector3(physx::PxVec3 value)
 {
 	return Vector3(value.x, value.y, value.z);
 }
 
-Quaternion SherbertHelpers::physics_to_quat(physx::PxQuat value)
+Quaternion Utils::physics_to_quat(physx::PxQuat value)
 {
 	return Quaternion(value.x, value.y, value.z, value.w);
 }
 
-physx::PxMat44 SherbertHelpers::matrix_to_physics(Matrix value)
+physx::PxMat44 Utils::matrix_to_physics(Matrix value)
 {
 	physx::PxMat44 matrix;
 
@@ -303,7 +306,7 @@ physx::PxMat44 SherbertHelpers::matrix_to_physics(Matrix value)
 	return matrix;
 }
 
-Matrix SherbertHelpers::physics_to_matrix(physx::PxMat44 value)
+Matrix Utils::physics_to_matrix(physx::PxMat44 value)
 {
 	Matrix matrix;
 
@@ -331,7 +334,7 @@ Matrix SherbertHelpers::physics_to_matrix(physx::PxMat44 value)
 }
 
 /* 12/11/2022 */
-const char* SherbertHelpers::OpenFileDialog(LPCWSTR dir, LPCWSTR filter, LPCWSTR title)
+const char* Utils::OpenFileDialog(LPCWSTR dir, LPCWSTR filter, LPCWSTR title)
 {
 	wchar_t wtext[MAX_PATH];
 	ZeroMemory(&wtext, sizeof(wtext));
@@ -356,38 +359,38 @@ const char* SherbertHelpers::OpenFileDialog(LPCWSTR dir, LPCWSTR filter, LPCWSTR
 	return b;
 }
 
-physx::PxTransform SherbertHelpers::position_rotation_to_physics(Vector3 position, Quaternion rotation)
+physx::PxTransform Utils::position_rotation_to_physics(Vector3 position, Quaternion rotation)
 {
 	return physx::PxTransform(
 		position.x, position.y, position.z,
 		physx::PxQuat(rotation.x, rotation.y, rotation.z, rotation.w));
 }
 
-void SherbertHelpers::SerializeVector2(YAML::Emitter& out, Vector2 value)
+void Utils::SerializeVector2(YAML::Emitter& out, Vector2 value)
 {
 	out << YAML::Flow;
 	out << YAML::BeginSeq << value.x << value.y << YAML::EndSeq;
 }
 
-void SherbertHelpers::SerializeVector3(YAML::Emitter& out, Vector3 value)
+void Utils::SerializeVector3(YAML::Emitter& out, Vector3 value)
 {
 	out << YAML::Flow;
 	out << YAML::BeginSeq << value.x << value.y << value.z << YAML::EndSeq;
 }
 
-void SherbertHelpers::SerializeVector4(YAML::Emitter& out, Vector4 value)
+void Utils::SerializeVector4(YAML::Emitter& out, Vector4 value)
 {
 	out << YAML::Flow;
 	out << YAML::BeginSeq << value.x << value.y << value.z << value.w << YAML::EndSeq;
 }
 
-void SherbertHelpers::SerializeQuaternion(YAML::Emitter& out, Quaternion value)
+void Utils::SerializeQuaternion(YAML::Emitter& out, Quaternion value)
 {
 	out << YAML::Flow;
 	out << YAML::BeginSeq << value.x << value.y << value.z << value.w << YAML::EndSeq;
 }
 
-Vector2 SherbertHelpers::DeserializeVector2(YAML::Node& in)
+Vector2 Utils::DeserializeVector2(YAML::Node& in)
 {
 	Vector2 value;
 	if (in.IsSequence())
@@ -398,7 +401,7 @@ Vector2 SherbertHelpers::DeserializeVector2(YAML::Node& in)
 	return value;
 }
 
-Vector3 SherbertHelpers::DeserializeVector3(YAML::Node& in)
+Vector3 Utils::DeserializeVector3(YAML::Node& in)
 {
 	Vector3 value;
 	if (in.IsSequence())
@@ -410,7 +413,7 @@ Vector3 SherbertHelpers::DeserializeVector3(YAML::Node& in)
 	return value;
 }
 
-Vector4 SherbertHelpers::DeserializeVector4(YAML::Node& in)
+Vector4 Utils::DeserializeVector4(YAML::Node& in)
 {
 	Vector4 value;
 	if (in.IsSequence())
@@ -423,7 +426,7 @@ Vector4 SherbertHelpers::DeserializeVector4(YAML::Node& in)
 	return value;
 }
 
-Quaternion SherbertHelpers::DeserializeQuaternion(YAML::Node& in)
+Quaternion Utils::DeserializeQuaternion(YAML::Node& in)
 {
 	Quaternion value;
 	if (in.IsSequence())
@@ -436,12 +439,12 @@ Quaternion SherbertHelpers::DeserializeQuaternion(YAML::Node& in)
 	return value;
 }
 
-float SherbertHelpers::RadToDeg(float value)
+float Utils::RadToDeg(float value)
 {
 	return DirectX::XMConvertToDegrees(value);
 }
 
-float SherbertHelpers::DegToRad(float value)
+float Utils::DegToRad(float value)
 {
 	return DirectX::XMConvertToRadians(value);
 }

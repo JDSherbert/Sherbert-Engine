@@ -1,3 +1,5 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #define DEFAULT_FONT "Resources\\Fonts\\Roboto.ttf"
@@ -7,4 +9,5 @@
 
 #include <crtdbg.h>
 #include <Windows.h>
-#include "../ENGINE/Engine.h"
+
+#include "../Engine.h"

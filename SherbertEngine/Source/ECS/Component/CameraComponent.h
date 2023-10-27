@@ -1,7 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
-#include "../../IMGUI/imgui.h"
-#include "../../HELPERS/Helpers.h"
+#include "../../Imgui/imgui.h"
+#include "../../Core/Utils.h"
 
 #define MIN_FOV 1.0f
 #define MAX_FOV 128.0f

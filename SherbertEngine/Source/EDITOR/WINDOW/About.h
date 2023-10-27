@@ -1,8 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include <d3d11.h>
-#include "../../IMGUI/imgui.h"
+#include "../../Imgui/imgui.h"
 
 class AboutWindow
 {

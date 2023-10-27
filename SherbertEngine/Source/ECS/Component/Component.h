@@ -1,14 +1,16 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include "entt/entt.hpp"
-#include "../../IMGUI/imgui.h"
-#include "../../ENTITY/Entity.h"
-#include "../../HELPERS/Helpers.h"
-#include "../../IMGUI/imgui_stdlib.h"
+#include "../../Imgui/imgui.h"
+#include "../../ECS/Entity.h"
+#include "../../Core/Utils.h"
+#include "../../Imgui/imgui_stdlib.h"
 #include <yaml-cpp/yaml.h>
 
-struct GeneralComponent
+struct Component
 {
 private:
 	std::string nameEntity = "Entity";        /* entity name */

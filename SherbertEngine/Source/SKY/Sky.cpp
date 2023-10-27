@@ -1,11 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Sky.h"
 
 #include <fstream>
-#include "../DX/DX.h"
-#include "../EDITOR/Editor.h"
-#include "../MODEL/AssimpLoader.h"
-#include "../EDITOR/WINDOW/Assets.h"
-#include "../EDITOR/WINDOW/Viewport.h"
+#include "../DirectX/DX.h"
+#include "../Editor/Editor.h"
+#include "../Model/AssimpLoader.h"
+#include "../Editor/Window/Assets.h"
+#include "../Editor/Window/Viewport.h"
 
 static Sky sky;
 
@@ -29,9 +31,9 @@ static ConstantBuffer cb;
 
 bool Sky::Init()
 {
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\vs.hlsl", "main", VS_VERSION, &VS)))
+	if (FAILED(Utils::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\vs.hlsl", "main", VS_VERSION, &VS)))
 		return false;
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\ps.hlsl", "main", PS_VERSION, &PS)))
+	if (FAILED(Utils::CompileShaderFromFile(L"Resources\\Shaders\\Sky\\ps.hlsl", "main", PS_VERSION, &PS)))
 		return false;
 	if (FAILED(dx->dxDevice->CreateVertexShader(VS->GetBufferPointer(), VS->GetBufferSize(), nullptr, &pVS)))
 		return false;
@@ -202,7 +204,7 @@ void Sky::OutCore(SkyFile sky)
 		{
 			if (sphere_texture) sphere_texture->Release();
 
-			SherbertHelpers::AddLog("[Sky] -> Loading... %s", sky.GetSpherePath().c_str());
+			Utils::AddLog("[Sky] -> Loading... %s", sky.GetSpherePath().c_str());
 
 			size_t pos = sky.GetSpherePath().find_last_of(".");
 			std::string buffer = sky.GetSpherePath().substr(pos);
@@ -233,7 +235,7 @@ void Sky::OutCore(SkyFile sky)
 			{
 				DirectX::TexMetadata data;
 				if (FAILED(DirectX::LoadFromHDRFile(
-					SherbertHelpers::ConvertString(sky.GetSpherePath()).c_str(), &data, sphere_image)))
+					Utils::ConvertString(sky.GetSpherePath()).c_str(), &data, sphere_image)))
 					return;
 
 				if (FAILED(DirectX::CreateShaderResourceView(

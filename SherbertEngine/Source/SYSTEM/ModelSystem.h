@@ -1,3 +1,5 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <d3d11.h>

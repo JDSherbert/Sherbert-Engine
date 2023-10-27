@@ -1,6 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Console.h"
+
 #include "../Editor.h"
-#include "../../IMGUI/imgui_stdlib.h"
+#include "../../Imgui/imgui_stdlib.h"
 #include <iomanip>
 #include <chrono>
 

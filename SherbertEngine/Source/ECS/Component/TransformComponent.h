@@ -1,8 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
-#include "../../HELPERS/Helpers.h"
-#include "../../XTK/MATH/SimpleMath.h"
-#include "../../EDITOR/WINDOW/Viewport.h"
+#include "../../Core/Utils.h"
+#include "../../XTK/Math/SimpleMath.h"
+#include "../../Editor/Window/Viewport.h"
 #include <yaml-cpp/yaml.h>
 
 struct Transform

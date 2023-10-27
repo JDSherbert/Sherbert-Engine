@@ -1,7 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
-#include "../../IMGUI/imgui.h"
-#include "../../IMGUI/imgui_stdlib.h"
+#include "../../Imgui/imgui.h"
+#include "../../Imgui/imgui_stdlib.h"
 #include "../../TTF2MESH/ttf2mesh.h"
 
 enum AlignGlyph : unsigned char

@@ -1,7 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Main.h"
-#include "../SPLASHSCREEN/SplashScreen.h"
+
+#include "../Cosmetic/Splash.h"
 #include <thread>
-#include "../GAME/Game.h"
+#include "../Game/Game.h"
 #include <iostream>
 
 //#define XGAME
@@ -33,7 +36,7 @@
 #endif
 
 static Game* game = &GameClass();
-static SplashScreen* splashScreen = &SplashScreenClass();
+static Splash* splash = &SplashScreenClass();
 
 int StartEngine(HINSTANCE& hInstance, HINSTANCE& hPrevInstance, PWSTR& pCmdLine, int& nCmdShow)
 {
@@ -43,10 +46,10 @@ int StartEngine(HINSTANCE& hInstance, HINSTANCE& hPrevInstance, PWSTR& pCmdLine,
 
 	DX11SetReference(hInstance, hPrevInstance, pCmdLine, nCmdShow);
 
-	if (!splashScreen->ShowSplashScreen())
+	if (!splash->ShowSplashScreen())
 		return 0;
 
-	if (!DX11CreateWindow(L"Sherbert Engine", 1280, 720))
+	if (!DX11CreateWindow(L"Sherbert Editor", 1280, 720))
 		return 0;
 
 	if (!DX11CreateContext())
@@ -57,7 +60,7 @@ int StartEngine(HINSTANCE& hInstance, HINSTANCE& hPrevInstance, PWSTR& pCmdLine,
 
 	EngineStart();
 
-	splashScreen->HideSplashScreen();
+	splash->HideSplashScreen();
 
 	EngineUpdate();
 	EngineShutdown();

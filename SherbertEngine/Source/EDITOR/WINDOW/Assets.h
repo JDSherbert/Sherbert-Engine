@@ -1,3 +1,5 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
@@ -6,11 +8,11 @@
 #include <d3d11.h>
 #include <filesystem>
 #include "../Editor.h"
-#include "../../DX/DX.h"
-#include "../../SKY/Sky.h"
-#include "../../IMGUI/imgui.h"
-#include "../../XTK/TEX/DirectXTex.h"
-#include "../../XTK/MATH/SimpleMath.h"
+#include "../../DirectX/DX.h"
+#include "../../Sky/Sky.h"
+#include "../../Imgui/imgui.h"
+#include "../../XTK/Tex/DirectXTex.h"
+#include "../../XTK/Math/SimpleMath.h"
 #include "../../XTK/WICTextureLoader11.h"
 #include "../../XTK/DDSTextureLoader11.h"
 

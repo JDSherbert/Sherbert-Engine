@@ -1,7 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <entt/entt.hpp>
-#include "../../IMGUI/imgui.h"
+#include "../../Imgui/imgui.h"
 
 class HierarchyWindow
 {

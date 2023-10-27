@@ -1,11 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <chrono>
-#include "../DX/DX.h"
-#include "../IMGUI/imgui.h"
-#include "../HELPERS/Helpers.h"
-#include "../IMGUI/imgui_impl_dx11.h"
-#include "../IMGUI/imgui_impl_win32.h"
+#include "../DirectX/DX.h"
+#include "../Imgui/imgui.h"
+#include "../Core/Utils.h"
+#include "../Imgui/imgui_impl_dx11.h"
+#include "../Imgui/imgui_impl_win32.h"
 #include <IconFontCppHeaders/IconsFontAwesome5.h>
 
 #define WINDOW_DOWN 32

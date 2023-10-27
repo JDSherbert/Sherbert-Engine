@@ -1,8 +1,11 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "About.h"
-#include "../../DX/DX.h"
-#include "../../MAIN/Main.h"
-#include "../../HELPERS/Helpers.h"
-#include "../../XTK/TEX/DirectXTex.h"
+
+#include "../../DirectX/DX.h"
+#include "../../Core/Main.h"
+#include "../../Core/Utils.h"
+#include "../../XTK/Tex/DirectXTex.h"
 #include "../../XTK/WICTextureLoader11.h"
 
 static AboutWindow about;
@@ -66,14 +69,14 @@ void AboutWindow::Init()
 		DirectX::WIC_FLAGS_NONE,
 		NULL,
 		scratchImage)))
-		SherbertHelpers::AddLog("[About] -> Failed to load texture from file!");
+		Utils::AddLog("[About] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateShaderResourceView(dx->dxDevice,
 		scratchImage.GetImages(),
 		scratchImage.GetImageCount(),
 		scratchImage.GetMetadata(),
 		&_SherbertBanner)))
-		SherbertHelpers::AddLog("[About] -> Failed to create shader resource view from scratch image!");
+		Utils::AddLog("[About] -> Failed to create shader resource view from scratch image!");
 
 	scratchImage.Release();
 

@@ -1,9 +1,12 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "AssimpLoader.h"
+
 #include <filesystem>
-#include "../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../ENTITY/COMPONENT/TransformComponent.h"
-#include "../EDITOR/WINDOW/Assets.h"
-#include "../EDITOR/WINDOW/Console.h"
+#include "../ECS/Component/Component.h"
+#include "../ECS/Component/TransformComponent.h"
+#include "../Editor/Window/Assets.h"
+#include "../Editor/Window/Console.h"
 
 static AssimpLoader assimpLoader;
 
@@ -122,10 +125,10 @@ bool AssimpLoader::LoadModel(std::string path, entt::entity entity)
 	}
 
 	entt::entity parent = ecs->registry.create();
-	ecs->registry.emplace<GeneralComponent>(parent);
+	ecs->registry.emplace<Component>(parent);
 	ecs->registry.emplace<TransformComponent>(parent);
-	ecs->registry.get<GeneralComponent>(parent).SetName(std::filesystem::path(path).stem().string().c_str());
-	ecs->registry.get<GeneralComponent>(entity).AddChild(parent);
+	ecs->registry.get<Component>(parent).SetName(std::filesystem::path(path).stem().string().c_str());
+	ecs->registry.get<Component>(entity).AddChild(parent);
 
 	ProcessNode(pScene->mRootNode, pScene, parent, path);
 	return true;
@@ -147,15 +150,15 @@ void AssimpLoader::ProcessNode(aiNode* node, const aiScene* scene, entt::entity 
 void AssimpLoader::ProcessMesh(aiNode* node, aiMesh* mesh, const aiScene* scene, entt::entity entity, std::string path)
 {
 	entt::entity child = ecs->registry.create();                 /* create entity */
-	ecs->registry.emplace<GeneralComponent>(child);              /* add component */
+	ecs->registry.emplace<Component>(child);              /* add component */
 	ecs->registry.emplace<TransformComponent>(child);            /* add component */
 	ecs->registry.emplace<MeshComponent>(child);                 /* add component */
-	auto& gen_comp = ecs->registry.get<GeneralComponent>(child); /* get component */
+	auto& gen_comp = ecs->registry.get<Component>(child); /* get component */
 	auto& mesh_comp = ecs->registry.get<MeshComponent>(child);   /* get component */
 	gen_comp.SetName(mesh->mName.C_Str());                       /* set name */
 	mesh_comp.SetFileName(path);
 	mesh_comp.SetMeshName(mesh->mName.C_Str());
-	ecs->registry.get<GeneralComponent>(entity).AddChild(child); /* add child to parent */
+	ecs->registry.get<Component>(entity).AddChild(child); /* add child to parent */
 
 	for (unsigned int i = 0; i < mesh->mNumVertices; i++)
 	{
@@ -196,7 +199,7 @@ void AssimpLoader::ProcessMesh(aiNode* node, aiMesh* mesh, const aiScene* scene,
 	}
 
 	if (!mesh_comp.SetupMesh()) /* create mesh */
-		SherbertHelpers::AddLog("ASSIMP << SETUP << MESH << FAILED");
+		Utils::AddLog("ASSIMP << SETUP << MESH << FAILED");
 
 	aiMaterial* material = scene->mMaterials[mesh->mMaterialIndex];
 	std::string buffer = std::filesystem::path(path).parent_path().string() + "\\" + std::filesystem::path(path).stem().string() + "\\" + material->GetName().C_Str() + MAT;

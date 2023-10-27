@@ -1,9 +1,11 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <Windows.h>
 #include <string>
 
-class SplashScreen
+class Splash
 {
 public:
 	bool ShowSplashScreen();
@@ -17,4 +19,4 @@ private:
 	std::wstring path = L"Resources\\Images\\SplashScreen.bmp";
 };
 
-SplashScreen& SplashScreenClass();
+Splash& SplashScreenClass();

@@ -1,11 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include <Windows.h>
-#include "../DX/DX.h"
-#include "../SKY/Sky.h"
-#include "../EDITOR/Editor.h"
-#include "../HELPERS/Helpers.h"
+#include "DirectX/DX.h"
+#include "Sky/Sky.h"
+#include "Editor/Editor.h"
+#include "Core/Utils.h"
 
 void DX11SetReference(HINSTANCE& hInstance, HINSTANCE& hPrevInstance, PWSTR& pCmdLine, int& nCmdShow);
 bool DX11CreateWindow(std::wstring name, int width, int height);

@@ -1,3 +1,5 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
@@ -5,9 +7,10 @@
 #include <assimp\scene.h>
 #include <assimp\Importer.hpp>
 #include <assimp\postprocess.h>
-#include "../ENTITY/COMPONENT/MeshComponent.h"
+#include "../ECS/Component/MeshComponent.h"
 
-struct Mesh {
+struct Mesh 
+{
 	std::vector<Vertex> vertices;
 	std::vector<UINT> indices;
 };

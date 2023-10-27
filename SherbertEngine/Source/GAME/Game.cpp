@@ -1,8 +1,11 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Game.h"
-#include "../HELPERS/Helpers.h"
-#include "../DX/DX.h"
-#include "../ENTITY/Entity.h"
-#include "../SYSTEM/ScriptingSystem.h"
+
+#include "../Core/Utils.h"
+#include "../DirectX/DX.h"
+#include "../ECS/Entity.h"
+#include "../System/ScriptingSystem.h"
 
 static Game game;
 
@@ -79,8 +82,8 @@ bool Game::GameCreateWindow()
 
     ///////////////////////////////////////////////////////////
 
-    int x = (SherbertHelpers::GetDisplayWidth() - width) / 2;
-    int y = (SherbertHelpers::GetDisplayHeight() - height) / 2;
+    int x = (Utils::GetDisplayWidth() - width) / 2;
+    int y = (Utils::GetDisplayHeight() - height) / 2;
 
     DWORD dwStyle = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX;
 

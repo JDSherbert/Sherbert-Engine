@@ -1,10 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "ProjectSceneSystem.h"
-#include "../ENTITY/Entity.h"
-#include "../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../ENTITY/COMPONENT/TransformComponent.h"
-#include "../EDITOR/WINDOW/Viewport.h"
+
+#include "../ECS/Entity.h"
+#include "../ECS/COMPONENT/Component.h"
+#include "../ECS/COMPONENT/TransformComponent.h"
+#include "../Editor/Window/Viewport.h"
 #include <fstream>
-#include "../MAIN/Main.h"
+#include "../Core/Main.h"
 
 #define XFILE "C:\\DX\\SHERBERT\\ENGINE\\data.scene"
 
@@ -23,7 +26,7 @@ static ViewportWindow* viewportWindow = &ViewportClass();
 void ProjectSceneSystem::ClearScene()
 {
 	ecs->selected = entt::null;
-	auto& generalComponent = ecs->GetComponent<GeneralComponent>(ecs->root);
+	auto& generalComponent = ecs->GetComponent<Component>(ecs->root);
 	generalComponent.DestroyChildren();
 }
 void ProjectSceneSystem::NewScene()
@@ -44,7 +47,7 @@ void ProjectSceneSystem::NewScene()
 
 void ProjectSceneSystem::SaveScene()
 {
-	SherbertHelpers::AddLog("[Scene] -> Saving Scene...");
+	Utils::AddLog("[Scene] -> Saving Scene...");
 
 	YAML::Emitter out;
 
@@ -74,7 +77,7 @@ void ProjectSceneSystem::SaveScene()
 
 void ProjectSceneSystem::OpenScene()
 {
-	SherbertHelpers::AddLog("[Scene] -> Opening Scene...");
+	Utils::AddLog("[Scene] -> Opening Scene...");
 
 	ClearScene();
 
@@ -85,14 +88,14 @@ void ProjectSceneSystem::OpenScene()
 
 void ProjectSceneSystem::SerializeEntity(YAML::Emitter& out, entt::entity entity)
 {
-	auto& parent = ecs->GetComponent<GeneralComponent>(entity);
+	auto& parent = ecs->GetComponent<Component>(entity);
 
 	out << YAML::BeginMap;
 	{
 		out << YAML::Key << "ENTITY" << YAML::Value << YAML::BeginMap;
 		{
-			if (ecs->HasComponent<GeneralComponent>(entity))
-				ecs->GetComponent<GeneralComponent>(entity).SerializeComponent(out);
+			if (ecs->HasComponent<Component>(entity))
+				ecs->GetComponent<Component>(entity).SerializeComponent(out);
 			if (ecs->HasComponent<TransformComponent>(entity))
 				ecs->GetComponent<TransformComponent>(entity).SerializeComponent(out);
 			if (ecs->HasComponent<MeshComponent>(entity))
@@ -104,7 +107,7 @@ void ProjectSceneSystem::SerializeEntity(YAML::Emitter& out, entt::entity entity
 
 	for (size_t i = 0; i < parent.GetChildren().size(); i++)
 	{
-		auto& child = ecs->GetComponent<GeneralComponent>(parent.GetChildren()[i]);
+		auto& child = ecs->GetComponent<Component>(parent.GetChildren()[i]);
 		SerializeEntity(out, parent.GetChildren()[i]);
 	}
 }
@@ -120,8 +123,8 @@ void ProjectSceneSystem::SerializeHierarchy(YAML::Emitter& out)
 
 void ProjectSceneSystem::SaveFile(YAML::Emitter& out, const char* filename)
 {
-	SherbertHelpers::AddLog("[Scene] -> Saving File...");
-	if (!out.good()) SherbertHelpers::AddLog("[YAML] -> %s", out.GetLastError().c_str());
+	Utils::AddLog("[Scene] -> Saving File...");
+	if (!out.good()) Utils::AddLog("[YAML] -> %s", out.GetLastError().c_str());
 	std::ofstream stream(filename);
 	stream << out.c_str();
 	stream.close();

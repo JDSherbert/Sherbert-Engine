@@ -1,7 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <Windows.h>
-#include "../IMGUI/imgui.h"
+#include "../Imgui/imgui.h"
 
 typedef void (*MYFUNC)(ImGuiContext*);
 

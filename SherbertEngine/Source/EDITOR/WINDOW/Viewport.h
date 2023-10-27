@@ -1,13 +1,15 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include <vector>
 #include <DirectXMath.h>
-#include "../../DX/DX.h"
-#include "../../IMGUI/imgui.h"
-#include "../../IMGUIZMO/ImGuizmo.h"
-#include "../../ENTITY/COMPONENT/MeshComponent.h"
-#include "../../ENTITY/COMPONENT/TransformComponent.h"
+#include "../../DirectX/DX.h"
+#include "../../Imgui/imgui.h"
+#include "../../Imguizmo/ImGuizmo.h"
+#include "../../ECS/Component/MeshComponent.h"
+#include "../../ECS/Component/TransformComponent.h"
 
 struct TransformComponent;
 

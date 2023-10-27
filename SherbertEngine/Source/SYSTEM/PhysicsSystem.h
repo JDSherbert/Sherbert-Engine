@@ -1,8 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <entt/entt.hpp>
 #include <physx/PxPhysicsAPI.h>
-#include "../XTK/MATH/SimpleMath.h"
+#include "../XTK/Math/SimpleMath.h"
 #define PVD_HOST "127.0.0.1"
 #define PVD_PORT 5425
 

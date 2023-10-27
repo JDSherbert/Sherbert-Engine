@@ -1,7 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <physx/PxPhysicsAPI.h>
-#include "../../XTK/MATH/SimpleMath.h"
+#include "../../XTK/Math/SimpleMath.h"
+
 using namespace DirectX::SimpleMath;
 
 struct RigidBodyComponent

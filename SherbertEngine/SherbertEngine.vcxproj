@@ -20,125 +20,125 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Source\MODULE\Module.h" />
-    <ClInclude Include="Source\SYSTEM\ScriptingSystem.h" />
-    <ClInclude Include="Source\SYSTEM\ProjectSceneSystem.h" />
-    <ClInclude Include="Source\SPLASHSCREEN\SplashScreen.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\About.h" />
-    <ClInclude Include="Source\SYSTEM\ModelSystem.h" />
-    <ClInclude Include="Source\SYSTEM\PhysicsSystem.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\RigidBodyComponent.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\Console.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\CameraComponent.h" />
-    <ClInclude Include="Source\GAME\Game.h" />
-    <ClInclude Include="Source\MODEL\AssimpLoader.h" />
-    <ClInclude Include="Source\SKY\Sky.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\File.h" />
-    <ClInclude Include="Source\IMGUIZMO\ImGuizmo.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\MeshComponent.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\Inspector.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\Hierarchy.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\GeneralComponent.h" />
-    <ClInclude Include="Source\ENTITY\Entity.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\Assets.h" />
-    <ClInclude Include="Source\EDITOR\Editor.h" />
-    <ClInclude Include="Source\HELPERS\Helpers.h" />
-    <ClInclude Include="Source\DX\DX.h" />
-    <ClInclude Include="Source\ENGINE\Engine.h" />
-    <ClInclude Include="Source\IMGUI\imconfig.h" />
-    <ClInclude Include="Source\IMGUI\imgui.h" />
-    <ClInclude Include="Source\IMGUI\imgui_impl_dx11.h" />
-    <ClInclude Include="Source\IMGUI\imgui_impl_win32.h" />
-    <ClInclude Include="Source\IMGUI\imgui_internal.h" />
-    <ClInclude Include="Source\IMGUI\imgui_stdlib.h" />
-    <ClInclude Include="Source\IMGUI\imstb_rectpack.h" />
-    <ClInclude Include="Source\IMGUI\imstb_textedit.h" />
-    <ClInclude Include="Source\IMGUI\imstb_truetype.h" />
-    <ClInclude Include="Source\MAIN\Main.h" />
+    <ClInclude Include="Source\Module\Module.h" />
+    <ClInclude Include="Source\System\ScriptingSystem.h" />
+    <ClInclude Include="Source\System\ProjectSceneSystem.h" />
+    <ClInclude Include="Source\Cosmetic\Splash.h" />
+    <ClInclude Include="Source\Editor\Window\About.h" />
+    <ClInclude Include="Source\System\ModelSystem.h" />
+    <ClInclude Include="Source\System\PhysicsSystem.h" />
+    <ClInclude Include="Source\ECS\Component\RigidBodyComponent.h" />
+    <ClInclude Include="Source\Editor\Window\Console.h" />
+    <ClInclude Include="Source\ECS\Component\CameraComponent.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Model\AssimpLoader.h" />
+    <ClInclude Include="Source\Sky\Sky.h" />
+    <ClInclude Include="Source\Editor\Window\File.h" />
+    <ClInclude Include="Source\Imguizmo\ImGuizmo.h" />
+    <ClInclude Include="Source\ECS\Component\MeshComponent.h" />
+    <ClInclude Include="Source\Editor\Window\Inspector.h" />
+    <ClInclude Include="Source\Editor\Window\Hierarchy.h" />
+    <ClInclude Include="Source\ECS\Component\Component.h" />
+    <ClInclude Include="Source\ECS\Entity.h" />
+    <ClInclude Include="Source\Editor\Window\Assets.h" />
+    <ClInclude Include="Source\Editor\Editor.h" />
+    <ClInclude Include="Source\Core\Utils.h" />
+    <ClInclude Include="Source\DirectX\DX.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\Imgui\imconfig.h" />
+    <ClInclude Include="Source\Imgui\imgui.h" />
+    <ClInclude Include="Source\Imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="Source\Imgui\imgui_impl_win32.h" />
+    <ClInclude Include="Source\Imgui\imgui_internal.h" />
+    <ClInclude Include="Source\Imgui\imgui_stdlib.h" />
+    <ClInclude Include="Source\Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Source\Imgui\imstb_textedit.h" />
+    <ClInclude Include="Source\Imgui\imstb_truetype.h" />
+    <ClInclude Include="Source\Core\Main.h" />
     <ClInclude Include="Source\TTF2MESH\ttf2mesh.h" />
-    <ClInclude Include="Source\XTK\AUDIO\WAVFileReader.h" />
+    <ClInclude Include="Source\XTK\Audio\WAVFileReader.h" />
     <ClInclude Include="Source\XTK\DDSTextureLoader11.h" />
-    <ClInclude Include="Source\XTK\MATH\SimpleMath.h" />
+    <ClInclude Include="Source\XTK\Math\SimpleMath.h" />
     <ClInclude Include="Source\XTK\pch.h" />
-    <ClInclude Include="Source\XTK\TEX\BC.h" />
-    <ClInclude Include="Source\XTK\TEX\d3dx12.h" />
-    <ClInclude Include="Source\XTK\TEX\DDS.h" />
-    <ClInclude Include="Source\XTK\TEX\DirectXTex.h" />
-    <ClInclude Include="Source\XTK\TEX\DirectXTexP.h" />
-    <ClInclude Include="Source\XTK\TEX\filters.h" />
-    <ClInclude Include="Source\XTK\TEX\scoped.h" />
+    <ClInclude Include="Source\XTK\Tex\BC.h" />
+    <ClInclude Include="Source\XTK\Tex\d3dx12.h" />
+    <ClInclude Include="Source\XTK\Tex\DDS.h" />
+    <ClInclude Include="Source\XTK\Tex\DirectXTex.h" />
+    <ClInclude Include="Source\XTK\Tex\DirectXTexP.h" />
+    <ClInclude Include="Source\XTK\Tex\filters.h" />
+    <ClInclude Include="Source\XTK\Tex\scoped.h" />
     <ClInclude Include="Source\XTK\WICTextureLoader11.h" />
-    <ClInclude Include="Source\EDITOR\WINDOW\Viewport.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\TransformComponent.h" />
-    <ClInclude Include="Source\ENTITY\COMPONENT\TextMeshComponent.h" />
+    <ClInclude Include="Source\Editor\Window\Viewport.h" />
+    <ClInclude Include="Source\ECS\Component\TransformComponent.h" />
+    <ClInclude Include="Source\ECS\Component\TextMeshComponent.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\MODULE\Module.cpp" />
-    <ClCompile Include="Source\SYSTEM\ScriptingSystem.cpp" />
-    <ClCompile Include="Source\SYSTEM\ProjectSceneSystem.cpp" />
-    <ClCompile Include="Source\SPLASHSCREEN\SplashScreen.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\About.cpp" />
-    <ClCompile Include="Source\SYSTEM\ModelSystem.cpp" />
-    <ClCompile Include="Source\SYSTEM\PhysicsSystem.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\RigidBodyComponent.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\Console.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\CameraComponent.cpp" />
-    <ClCompile Include="Source\GAME\Game.cpp" />
-    <ClCompile Include="Source\MODEL\AssimpLoader.cpp" />
-    <ClCompile Include="Source\SKY\Sky.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\File.cpp" />
-    <ClCompile Include="Source\IMGUIZMO\ImGuizmo.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\MeshComponent.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\Inspector.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\Hierarchy.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\GeneralComponent.cpp" />
-    <ClCompile Include="Source\ENTITY\Entity.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\Assets.cpp" />
-    <ClCompile Include="Source\EDITOR\Editor.cpp" />
-    <ClCompile Include="Source\HELPERS\Helpers.cpp" />
-    <ClCompile Include="Source\DX\DX.cpp" />
-    <ClCompile Include="Source\ENGINE\Engine.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_demo.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_draw.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_impl_dx11.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_impl_win32.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_stdlib.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_tables.cpp" />
-    <ClCompile Include="Source\IMGUI\imgui_widgets.cpp" />
-    <ClCompile Include="Source\MAIN\Main.cpp" />
+    <ClCompile Include="Source\Module\Module.cpp" />
+    <ClCompile Include="Source\System\ScriptingSystem.cpp" />
+    <ClCompile Include="Source\System\ProjectSceneSystem.cpp" />
+    <ClCompile Include="Source\Cosmetic\Splash.cpp" />
+    <ClCompile Include="Source\Editor\Window\About.cpp" />
+    <ClCompile Include="Source\System\ModelSystem.cpp" />
+    <ClCompile Include="Source\System\PhysicsSystem.cpp" />
+    <ClCompile Include="Source\ECS\Component\RigidBodyComponent.cpp" />
+    <ClCompile Include="Source\Editor\Window\Console.cpp" />
+    <ClCompile Include="Source\ECS\Component\CameraComponent.cpp" />
+    <ClCompile Include="Source\Game\Game.cpp" />
+    <ClCompile Include="Source\Model\AssimpLoader.cpp" />
+    <ClCompile Include="Source\Sky\Sky.cpp" />
+    <ClCompile Include="Source\Editor\Window\File.cpp" />
+    <ClCompile Include="Source\Imguizmo\ImGuizmo.cpp" />
+    <ClCompile Include="Source\ECS\Component\MeshComponent.cpp" />
+    <ClCompile Include="Source\Editor\Window\Inspector.cpp" />
+    <ClCompile Include="Source\Editor\Window\Hierarchy.cpp" />
+    <ClCompile Include="Source\ECS\Component\Component.cpp" />
+    <ClCompile Include="Source\ECS\Entity.cpp" />
+    <ClCompile Include="Source\Editor\Window\Assets.cpp" />
+    <ClCompile Include="Source\Editor\Editor.cpp" />
+    <ClCompile Include="Source\Core\Utils.cpp" />
+    <ClCompile Include="Source\DirectX\DX.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Imgui\imgui.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_tables.cpp" />
+    <ClCompile Include="Source\Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\Core\Main.cpp" />
     <ClCompile Include="Source\TTF2MESH\ttf2mesh.c" />
-    <ClCompile Include="Source\XTK\AUDIO\WAVFileReader.cpp" />
+    <ClCompile Include="Source\XTK\Audio\WAVFileReader.cpp" />
     <ClCompile Include="Source\XTK\DDSTextureLoader11.cpp" />
-    <ClCompile Include="Source\XTK\MATH\SimpleMath.cpp" />
+    <ClCompile Include="Source\XTK\Math\SimpleMath.cpp" />
     <ClCompile Include="Source\XTK\pch.cpp" />
-    <ClCompile Include="Source\XTK\TEX\BC.cpp" />
-    <ClCompile Include="Source\XTK\TEX\BC4BC5.cpp" />
-    <ClCompile Include="Source\XTK\TEX\BC6HBC7.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexCompress.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexConvert.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexD3D11.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexD3D12.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexDDS.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexFlipRotate.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexHDR.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexImage.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexMipmaps.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexMisc.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexNormalMaps.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexPMAlpha.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexResize.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexTGA.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexUtil.cpp" />
-    <ClCompile Include="Source\XTK\TEX\DirectXTexWIC.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC4BC5.cpp" />
+    <ClCompile Include="Source\XTK\Tex\BC6HBC7.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexCompress.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexConvert.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexD3D11.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexD3D12.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexDDS.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexFlipRotate.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexHDR.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexImage.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexMipmaps.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexMisc.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexNormalMaps.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexPMAlpha.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexResize.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexTGA.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexUtil.cpp" />
+    <ClCompile Include="Source\XTK\Tex\DirectXTexWIC.cpp" />
     <ClCompile Include="Source\XTK\WICTextureLoader11.cpp" />
-    <ClCompile Include="Source\EDITOR\WINDOW\Viewport.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\TransformComponent.cpp" />
-    <ClCompile Include="Source\ENTITY\COMPONENT\TextMeshComponent.cpp" />
+    <ClCompile Include="Source\Editor\Window\Viewport.cpp" />
+    <ClCompile Include="Source\ECS\Component\TransformComponent.cpp" />
+    <ClCompile Include="Source\ECS\Component\TextMeshComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Source\XTK\MATH\SimpleMath.inl" />
-    <None Include="Source\XTK\TEX\DirectXTex.inl" />
+    <None Include="Source\XTK\Math\SimpleMath.inl" />
+    <None Include="Source\XTK\Tex\DirectXTex.inl" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SherbertEngine.rc" />
@@ -240,7 +240,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)\INCLUDE\lua;$(ProjectDir)\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include\lua;$(ProjectDir)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -260,7 +260,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)\INCLUDE\lua;$(ProjectDir)\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Include\lua;$(ProjectDir)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

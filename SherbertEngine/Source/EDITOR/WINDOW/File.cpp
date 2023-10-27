@@ -1,4 +1,7 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "File.h"
+
 #include "Assets.h"
 
 static FileWindow file;

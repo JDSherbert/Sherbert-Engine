@@ -1,9 +1,11 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
 #include <string>
 #include <vector>
 #include <sstream>
-#include "../../IMGUI/imgui.h"
+#include "../../Imgui/imgui.h"
 
 enum MessageType : unsigned char
 {

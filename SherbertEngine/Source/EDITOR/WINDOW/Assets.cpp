@@ -1,7 +1,10 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Assets.h"
+
 #include "Console.h"
 #include <yaml-cpp/yaml.h>
-#include "../../MAIN/Main.h"
+#include "../../Core/Main.h"
 #include <fstream>
 
 static AssetsWindow assets;
@@ -34,63 +37,63 @@ void AssetsWindow::Init()
 		FOLDER_ICON_PATH,
 		nullptr,
 		&folderTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		IMAGE_ICON_PATH,
 		nullptr,
 		&imageTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		FILE_ICON_PATH,
 		nullptr,
 		&fileTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		LUA_ICON_PATH,
 		nullptr,
 		&luaTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		MODEL_ICON_PATH,
 		nullptr,
 		&modelTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		FONT_ICON_PATH,
 		nullptr,
 		&ttfTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		AUDIO_ICON_PATH,
 		nullptr,
 		&audioTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		SKY_ICON_PATH,
 		nullptr,
 		&skyTexture))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	if (FAILED(DirectX::CreateDDSTextureFromFile(
 		dx->dxDevice,
 		MATERIAL_ICON_PATH,
 		nullptr,
 		&materialTexture)))
-		SherbertHelpers::AddLog("[Assets] -> Failed to load texture from file!");
+		Utils::AddLog("[Assets] -> Failed to load texture from file!");
 
 	//////////////////////////////////////////////////////////////
 
@@ -510,7 +513,7 @@ void AssetsWindow::OutCore(std::string path)
 				if (files[i].file_type == PNG || files[i].file_type == JPEG)
 				{
 					if (FAILED(LoadFromWICFile(
-						SherbertHelpers::ConvertString(buffer).c_str(),
+						Utils::ConvertString(buffer).c_str(),
 						WIC_FLAGS_IGNORE_SRGB,
 						nullptr,
 						normal_image)))
@@ -522,7 +525,7 @@ void AssetsWindow::OutCore(std::string path)
 				if (files[i].file_type == DDS)
 				{
 					if (FAILED(LoadFromDDSFile(
-						SherbertHelpers::ConvertString(buffer).c_str(),
+						Utils::ConvertString(buffer).c_str(),
 						DDS_FLAGS_NONE,
 						nullptr,
 						normal_image)))
@@ -702,7 +705,7 @@ void AssetsWindow::SaveMaterialFile(std::string path, const MaterialBuffer& buff
 	out << YAML::EndMap;
 
 	if (!out.good())
-		SherbertHelpers::AddLog("%s", out.GetLastError().c_str());
+		Utils::AddLog("%s", out.GetLastError().c_str());
 
 	std::ofstream stream(std::string(path + MAT));
 	stream << out.c_str();

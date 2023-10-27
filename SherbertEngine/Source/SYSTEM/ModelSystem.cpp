@@ -1,6 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "ModelSystem.h"
-#include "../HELPERS/Helpers.h"
-#include "../DX/DX.h"
+
+#include "../Core/Utils.h"
+#include "../DirectX/DX.h"
 
 static ModelSystem modelSystem;
 
@@ -25,9 +28,9 @@ bool ModelSystem::Init()
 	ID3DBlob* VS = nullptr;
 	ID3DBlob* PS = nullptr;
 
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Model\\vs.hlsl", ENTRY_POINT, VS_VERSION, &VS)))
+	if (FAILED(Utils::CompileShaderFromFile(L"Resources\\Shaders\\Model\\vs.hlsl", ENTRY_POINT, VS_VERSION, &VS)))
 		return false;
-	if (FAILED(SherbertHelpers::CompileShaderFromFile(L"Resources\\Shaders\\Model\\ps.hlsl", ENTRY_POINT, PS_VERSION, &PS)))
+	if (FAILED(Utils::CompileShaderFromFile(L"Resources\\Shaders\\Model\\ps.hlsl", ENTRY_POINT, PS_VERSION, &PS)))
 		return false;
 	if (FAILED(dx->dxDevice->CreateVertexShader(VS->GetBufferPointer(), VS->GetBufferSize(), nullptr, &pVS)))
 		return false;

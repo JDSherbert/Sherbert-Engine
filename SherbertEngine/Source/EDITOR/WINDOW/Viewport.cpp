@@ -1,11 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Viewport.h"
 
-#include "../../ENTITY/Entity.h"
-#include "../../HELPERS/Helpers.h"
-#include "../../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../../ENTITY/COMPONENT/CameraComponent.h"
-#include "../../GAME/Game.h"
-#include "../../SYSTEM/PhysicsSystem.h"
+#include "../../ECS/Entity.h"
+#include "../../Core/Utils.h"
+#include "../../ECS/Component/Component.h"
+#include "../../ECS/Component/CameraComponent.h"
+#include "../../Game/Game.h"
+#include "../../System/PhysicsSystem.h"
 
 static ViewportWindow viewport;
 
@@ -213,7 +215,7 @@ void ViewportWindow::UpdateMovement()
 
 	if (ImGui::IsMouseClicked(ImGuiMouseButton_Right) && cursorOnWindow)
 	{
-		RECT clip = SherbertHelpers::GetClientRect();
+		RECT clip = Utils::GetClientRect();
 
 		clip.left = (long)clip.left + (long)(windowPos.x + windowSize.x / 2);
 		clip.top = (long)clip.top + (long)(windowPos.y + windowSize.y / 2);
@@ -224,7 +226,7 @@ void ViewportWindow::UpdateMovement()
 		GetCursorPos(&cursorPosition);
 		ShowCursor(false);
 		ClipCursor(&clip);
-		SherbertHelpers::InputGetMouse();
+		Utils::InputGetMouse();
 	}
 	else if (ImGui::IsMouseReleased(ImGuiMouseButton_Right) && cursorOnWindow)
 	{
@@ -237,16 +239,16 @@ void ViewportWindow::UpdateMovement()
 	{
 		float delta = ImGui::GetIO().DeltaTime;
 
-		if (SherbertHelpers::InputGetKey(DIK_W))
-			lPosition = lPosition + matrix.Backward() * (SherbertHelpers::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
-		if (SherbertHelpers::InputGetKey(DIK_S))
-			lPosition = lPosition - matrix.Backward() * (SherbertHelpers::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
-		if (SherbertHelpers::InputGetKey(DIK_A))
-			lPosition = lPosition - matrix.Right() * (SherbertHelpers::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
-		if (SherbertHelpers::InputGetKey(DIK_D))
-			lPosition = lPosition + matrix.Right() * (SherbertHelpers::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
+		if (Utils::InputGetKey(DIK_W))
+			lPosition = lPosition + matrix.Backward() * (Utils::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
+		if (Utils::InputGetKey(DIK_S))
+			lPosition = lPosition - matrix.Backward() * (Utils::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
+		if (Utils::InputGetKey(DIK_A))
+			lPosition = lPosition - matrix.Right() * (Utils::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
+		if (Utils::InputGetKey(DIK_D))
+			lPosition = lPosition + matrix.Right() * (Utils::InputGetKey(DIK_LSHIFT) ? camBoostSpeed : camSpeed) * delta;
 
-		Vector2 current = SherbertHelpers::InputGetMouse();
+		Vector2 current = Utils::InputGetMouse();
 		lrotation.y += current.x * camSensitivity;
 		lrotation.x += current.y * camSensitivity;
 	}
@@ -282,9 +284,9 @@ void ViewportWindow::RenderWidgets()
 
 	if (ecs->selected != entt::null)
 	{
-		if (ecs->registry.any_of<GeneralComponent>(ecs->selected))
+		if (ecs->registry.any_of<Component>(ecs->selected))
 		{
-			auto& generalComponent = ecs->registry.get<GeneralComponent>(ecs->selected);
+			auto& generalComponent = ecs->registry.get<Component>(ecs->selected);
 			if (generalComponent.IsActive())
 			{
 				if (ecs->registry.any_of<TransformComponent>(ecs->selected))
@@ -467,7 +469,7 @@ void ViewportWindow::RunRay()
 		auto& transComp = ecs->registry.get<TransformComponent>(entity);
 		auto& meshComp = ecs->registry.get<MeshComponent>(entity);
 		tempDist = PickMesh(prwsPos, prwsDir, meshComp.GetVertices(), meshComp.GetIndices(), transComp.GetTransform());
-		if (tempDist < closestDist && ecs->registry.get<GeneralComponent>(entity).IsActive() && ecs->registry.get<MeshComponent>(entity).IsActive())
+		if (tempDist < closestDist && ecs->registry.get<Component>(entity).IsActive() && ecs->registry.get<MeshComponent>(entity).IsActive())
 		{
 			closestDist = tempDist;
 			ecs->selected = entity;

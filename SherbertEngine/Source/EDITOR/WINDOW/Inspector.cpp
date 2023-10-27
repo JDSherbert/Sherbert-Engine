@@ -1,14 +1,17 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Inspector.h"
-#include "../../ENTITY/Entity.h"
-#include "../../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../../ENTITY/COMPONENT/TransformComponent.h"
-#include "../../ENTITY/COMPONENT/MeshComponent.h"
-#include "../../ENTITY/COMPONENT/CameraComponent.h"
-#include "../../ENTITY/COMPONENT/TextMeshComponent.h"
-#include "../../ENTITY/COMPONENT/RigidbodyComponent.h"
-#include "../../SYSTEM/ScriptingSystem.h"
-#include "../../EDITOR/WINDOW/Assets.h"
-#include "../../SYSTEM/PhysicsSystem.h"
+
+#include "../../ECS/Entity.h"
+#include "../../ECS/Component/Component.h"
+#include "../../ECS/Component/TransformComponent.h"
+#include "../../ECS/Component/MeshComponent.h"
+#include "../../ECS/Component/CameraComponent.h"
+#include "../../ECS/Component/TextMeshComponent.h"
+#include "../../ECS/Component/RigidbodyComponent.h"
+#include "../../System/ScriptingSystem.h"
+#include "../../Editor/Window/Assets.h"
+#include "../../System/PhysicsSystem.h"
 
 static InspectorWindow inspectorWindow;
 
@@ -31,7 +34,7 @@ void InspectorWindow::Render()
 	{
 		if (ecs->selected != entt::null)
 		{
-			RenderComponent<GeneralComponent>(ecs->selected);
+			RenderComponent<Component>(ecs->selected);
 			RenderComponent<TransformComponent>(ecs->selected);
 			RenderComponent<MeshComponent>(ecs->selected);
 			RenderComponent<CameraComponent>(ecs->selected);

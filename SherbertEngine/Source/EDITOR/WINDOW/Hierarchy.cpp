@@ -1,9 +1,11 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Hierarchy.h"
 
-#include "../../ENTITY/Entity.h"
-#include "../../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../../EDITOR/WINDOW/Assets.h"
-#include "../../EDITOR/WINDOW/Console.h"
+#include "../../ECS/Entity.h"
+#include "../../ECS/Component/Component.h"
+#include "../../Editor/Window/Assets.h"
+#include "../../Editor/Window/Console.h"
 
 static HierarchyWindow hierarchy;
 static AssetsWindow* assetsWindow = &AssetsClass();
@@ -26,7 +28,7 @@ void HierarchyWindow::Render()
 
 	ImGui::Begin("Hierarchy");
 	{
-		auto view = ecs->registry.view<GeneralComponent>();
+		auto view = ecs->registry.view<Component>();
 
 		for (auto entity : view)
 		{
@@ -43,7 +45,7 @@ void HierarchyWindow::Render()
 
 void HierarchyWindow::RenderTree(entt::entity entity)
 {
-	auto& genComp = ecs->registry.get<GeneralComponent>(entity);
+	auto& genComp = ecs->registry.get<Component>(entity);
 
 	///////////////////////////////////////////////////////////
 

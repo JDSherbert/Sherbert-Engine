@@ -1,10 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "RigidBodyComponent.h"
-#include "../../IMGUI/imgui.h"
+
+#include "../../Imgui/imgui.h"
 #include <entt/entt.hpp>
-#include "../../ENTITY/Entity.h"
-#include "../../ENTITY/COMPONENT/TransformComponent.h"
-#include "../../EDITOR/WINDOW/Console.h"
-#include "../../SYSTEM/PhysicsSystem.h"
+#include "../../ECS/Entity.h"
+#include "../../ECS/Component/TransformComponent.h"
+#include "../../Editor/Window/Console.h"
+#include "../../System/PhysicsSystem.h"
 
 static Entity* ecs = &EntityClass();
 static ConsoleWindow* consoleWindow = &ConsoleClass();
@@ -103,8 +106,8 @@ void RigidBodyComponent::UpdateActor()
 		{
 			physx::PxTransform pxTransform = pxRigidBody->getGlobalPose();
 			auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
-			transformComponent.SetPosition(SherbertHelpers::physics_to_vector3(pxTransform.p));
-			transformComponent.SetRotationQuaternion(SherbertHelpers::physics_to_quat(pxTransform.q));
+			transformComponent.SetPosition(Utils::physics_to_vector3(pxTransform.p));
+			transformComponent.SetRotationQuaternion(Utils::physics_to_quat(pxTransform.q));
 		}
 	}
 }
@@ -117,8 +120,8 @@ void RigidBodyComponent::CreateActor()
 	{
 		auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
 		physx::PxTransform pxTransform = physx::PxTransform(
-			SherbertHelpers::vector3_to_physics(transformComponent.GetPosition()),
-			SherbertHelpers::quat_to_physics(transformComponent.GetRotationQuaternion()));
+			Utils::vector3_to_physics(transformComponent.GetPosition()),
+			Utils::quat_to_physics(transformComponent.GetRotationQuaternion()));
 		pxRigidBody = physicsSystem->GetPhysics()->createRigidDynamic(pxTransform);
 		if (!pxRigidBody) consoleWindow->AddWarningMessage("[RigidBody] -> Failed to create the RigidBody!");
 		physicsSystem->GetScene()->addActor(*pxRigidBody); /*<*>*/
@@ -146,11 +149,11 @@ float RigidBodyComponent::GetMass()
 }
 void RigidBodyComponent::SetLinearVelocity(Vector3 value)
 {
-	pxRigidBody->setLinearVelocity(SherbertHelpers::vector3_to_physics(value));
+	pxRigidBody->setLinearVelocity(Utils::vector3_to_physics(value));
 }
 Vector3 RigidBodyComponent::GetLinearVelocity()
 {
-	return SherbertHelpers::physics_to_vector3(pxRigidBody->getLinearVelocity());
+	return Utils::physics_to_vector3(pxRigidBody->getLinearVelocity());
 }
 void RigidBodyComponent::SetLinearDamping(float value)
 {
@@ -172,11 +175,11 @@ float RigidBodyComponent::GetAngularDamping()
 }
 void RigidBodyComponent::SetAngularVelocity(Vector3 value)
 {
-	pxRigidBody->setAngularVelocity(SherbertHelpers::vector3_to_physics(value));
+	pxRigidBody->setAngularVelocity(Utils::vector3_to_physics(value));
 }
 Vector3 RigidBodyComponent::GetAngularVelocity()
 {
-	return SherbertHelpers::physics_to_vector3(pxRigidBody->getAngularVelocity());
+	return Utils::physics_to_vector3(pxRigidBody->getAngularVelocity());
 }
 void RigidBodyComponent::UseGravity(bool value)
 {
@@ -196,11 +199,11 @@ bool RigidBodyComponent::IsKinematic()
 }
 void RigidBodyComponent::AddForce(Vector3 value)
 {
-	pxRigidBody->addForce(SherbertHelpers::vector3_to_physics(value));
+	pxRigidBody->addForce(Utils::vector3_to_physics(value));
 }
 void RigidBodyComponent::AddTorque(Vector3 value)
 {
-	pxRigidBody->addTorque(SherbertHelpers::vector3_to_physics(value));
+	pxRigidBody->addTorque(Utils::vector3_to_physics(value));
 }
 void RigidBodyComponent::ClearForce()
 {

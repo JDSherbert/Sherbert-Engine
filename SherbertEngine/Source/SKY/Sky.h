@@ -1,7 +1,9 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #pragma once
 
-#include "../MODEL/AssimpLoader.h"
-#include "../XTK/TEX/DirectXTex.h"
+#include "../Model/AssimpLoader.h"
+#include "../XTK/Tex/DirectXTex.h"
 
 enum SkyType : unsigned char
 {

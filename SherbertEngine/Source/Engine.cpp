@@ -1,15 +1,17 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "Engine.h"
 
-#include "../EDITOR/WINDOW/Viewport.h"
-#include "../ENTITY/COMPONENT/GeneralComponent.h"
-#include "../ENTITY/COMPONENT/CameraComponent.h"
-#include "../ENTITY/COMPONENT/TransformComponent.h"
-#include "../GAME/Game.h"
-#include "../ENTITY/COMPONENT/RigidbodyComponent.h"
-#include "../SYSTEM/PhysicsSystem.h"
-#include "../SYSTEM/ModelSystem.h"
-#include "../SYSTEM/ScriptingSystem.h"
-#include "../MODULE/Module.h"
+#include "Editor/Window/Viewport.h"
+#include "ECS/Component/Component.h"
+#include "ECS/Component/CameraComponent.h"
+#include "ECS/Component/TransformComponent.h"
+#include "Game/Game.h"
+#include "ECS/Component/RigidbodyComponent.h"
+#include "System/PhysicsSystem.h"
+#include "System/ModelSystem.h"
+#include "System/ScriptingSystem.h"
+#include "Module/Module.h"
 
 static DX* dx = &DXClass();
 static Editor* editor = &EditorClass();
@@ -55,8 +57,8 @@ bool DX11CreateWindow(std::wstring name, int width, int height)
 
     /*---*/
 
-    int x = (SherbertHelpers::GetDisplayWidth() - width) / 2;
-    int y = (SherbertHelpers::GetDisplayHeight() - height) / 2;
+    int x = (Utils::GetDisplayWidth() - width) / 2;
+    int y = (Utils::GetDisplayHeight() - height) / 2;
 
     dx->hwnd = CreateWindowEx(
         NULL,
@@ -178,8 +180,8 @@ bool DX11CreateDepthStencilView()
     D3D11_TEXTURE2D_DESC descDepth;
     ZeroMemory(&descDepth, sizeof(D3D11_TEXTURE2D_DESC));
 
-    descDepth.Width = SherbertHelpers::GetContextWidth();
-    descDepth.Height = SherbertHelpers::GetContextHeight();
+    descDepth.Width = Utils::GetContextWidth();
+    descDepth.Height = Utils::GetContextHeight();
     descDepth.MipLevels = 1;
     descDepth.ArraySize = 1;
     descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
@@ -214,7 +216,7 @@ bool DX11CreateDepthStencilView()
 
 bool DX11ResizeBuffer()
 {
-    SherbertHelpers::AddLog("[Engine] -> Resizing SwapChain Buffer...");
+    Utils::AddLog("[Engine] -> Resizing SwapChain Buffer...");
     dx->dxDeviceContext->OMSetRenderTargets(NULL, NULL, NULL);
     if (dx->dxRenderTargetView) dx->dxRenderTargetView->Release();
     if (dx->dxDepthStencilView) dx->dxDepthStencilView->Release();
@@ -256,37 +258,37 @@ void EngineStart()
     ecs->LoadCoreModels();
 
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Input System...");
-    if (!SherbertHelpers::InitInput())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Input System!");
+    Utils::AddLog("[Engine] -> Initializing Input System...");
+    if (!Utils::InitInput())
+        Utils::AddLog("[Engine] -> Failed to initialize Input System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Model System...");
+    Utils::AddLog("[Engine] -> Initializing Model System...");
     if (!modelSystem->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Model System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Model System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Sky System...");
+    Utils::AddLog("[Engine] -> Initializing Sky System...");
     if (!sky->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Sky System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Sky System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Editor System...");
+    Utils::AddLog("[Engine] -> Initializing Editor System...");
     if (!editor->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Editor System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Editor System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Physics System...");
+    Utils::AddLog("[Engine] -> Initializing Physics System...");
     if (!physicsSystem->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Physics System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Physics System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Entity Component System...");
+    Utils::AddLog("[Engine] -> Initializing Entity Component System...");
     if (!ecs->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Entity Component System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Entity Component System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Lua Script System...");
+    Utils::AddLog("[Engine] -> Initializing Lua Script System...");
     if (!scriptingSystem->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Lua Script System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Lua Script System!");
     /* --------------------------- */
-    SherbertHelpers::AddLog("[Engine] -> Initializing Module System...");
+    Utils::AddLog("[Engine] -> Initializing Module System...");
     if (!module->Init())
-        SherbertHelpers::AddLog("[Engine] -> Failed to initialize Module System!");
+        Utils::AddLog("[Engine] -> Failed to initialize Module System!");
     /* --------------------------- */
 
     /*
@@ -393,7 +395,7 @@ void EngineProcess()
 
 void EngineShutdown()
 {
-    SherbertHelpers::AddLog("[Engine] -> Shutting/Cleaning...");
+    Utils::AddLog("[Engine] -> Shutting/Cleaning...");
     editor->Shutdown();
     modelSystem->Shutdown();
     sky->Shutdown();
@@ -412,7 +414,7 @@ void UpdateTransform(entt::entity entity)
 {
     Matrix matrix = Matrix::Identity;
 
-    auto& pGC = ecs->registry.get<GeneralComponent>(entity);
+    auto& pGC = ecs->registry.get<Component>(entity);
     if (ecs->registry.any_of<TransformComponent>(entity))
     {
         auto& pTC = ecs->registry.get<TransformComponent>(entity);
@@ -460,11 +462,11 @@ void RenderEnvironment(Matrix projectionMatrix, Matrix viewMatrix, Vector4 color
 
     sky->Render(viewMatrix, projectionMatrix);
 
-    auto view = ecs->registry.view<GeneralComponent>();
+    auto view = ecs->registry.view<Component>();
     for (auto entity : view)
     {
         if (entity == ecs->root) continue;
-        if (!ecs->registry.get<GeneralComponent>(entity).IsActive()) continue;
+        if (!ecs->registry.get<Component>(entity).IsActive()) continue;
 
         if (ecs->registry.any_of<RigidBodyComponent>(entity))
             ecs->registry.get<RigidBodyComponent>(entity).UpdateActor();
@@ -485,7 +487,7 @@ bool FindGoodCamera(Matrix& projectionMatrix, Matrix& viewMatrix)
     auto view = ecs->registry.view<CameraComponent>();
     for (auto entity : view)
     {
-        if (!ecs->registry.get<GeneralComponent>(entity).IsActive()) continue;
+        if (!ecs->registry.get<Component>(entity).IsActive()) continue;
         if (!ecs->registry.get<CameraComponent>(entity).IsActive()) continue;
         if (!ecs->registry.any_of<TransformComponent>(entity)) continue;
 

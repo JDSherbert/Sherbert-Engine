@@ -1,10 +1,13 @@
+//©2021 JDSherbert. All Rights Reserved.
+
 #include "PhysicsSystem.h"
-#include "../IMGUI/imgui.h"
-#include "../ENTITY/Entity.h"
-#include "../ENTITY/COMPONENT/RigidbodyComponent.h"
-#include "../HELPERS/Helpers.h"
-#include "../EDITOR/WINDOW/Console.h"
-#include "../ENTITY/COMPONENT/TransformComponent.h"
+
+#include "../Imgui/imgui.h"
+#include "../ECS/Entity.h"
+#include "../ECS/Component/RigidbodyComponent.h"
+#include "../Core/Utils.h"
+#include "../Editor/Window/Console.h"
+#include "../ECS/Component/TransformComponent.h"
 
 static PhysicsSystem physicsSystem;
 
@@ -26,7 +29,7 @@ bool PhysicsSystem::Init()
 	gPvd = PxCreatePvd(*gFoundation);
 	transport = physx::PxDefaultPvdSocketTransportCreate(PVD_HOST, PVD_PORT, 10);
 	if (!gPvd->connect(*transport, physx::PxPvdInstrumentationFlag::eALL))
-		SherbertHelpers::AddLog("[PhysX] -> PhysX Visual Debugger is not connected!\n[PhysX] -> HOST %s PORT %i", PVD_HOST, PVD_PORT);
+		Utils::AddLog("[PhysX] -> PhysX Visual Debugger is not connected!\n[PhysX] -> HOST %s PORT %i", PVD_HOST, PVD_PORT);
 
 	gPhysics = PxCreatePhysics(PX_PHYSICS_VERSION, *gFoundation, physx::PxTolerancesScale(), true, gPvd);
 
@@ -43,7 +46,7 @@ bool PhysicsSystem::Init()
 		cudaContextManagerDesc.interopMode = physx::PxCudaInteropMode::D3D11_INTEROP;
 		cudaContextManagerDesc.graphicsDevice = dx->dxDevice;
 		gCudaContextManager = PxCreateCudaContextManager(*gFoundation, cudaContextManagerDesc);
-		if (gCudaContextManager) if (!gCudaContextManager->contextIsValid()) SherbertHelpers::AddLog("[PhysX] -> Cuda Context Manager Error!");
+		if (gCudaContextManager) if (!gCudaContextManager->contextIsValid()) Utils::AddLog("[PhysX] -> Cuda Context Manager Error!");
 
 		gDispatcher = physx::PxDefaultCpuDispatcherCreate(4);
 		sceneDesc.gpuDispatcher = gCudaContextManager->getGpuDispatcher();
@@ -56,7 +59,7 @@ bool PhysicsSystem::Init()
 	}
 	else
 	{
-		SherbertHelpers::AddLog("[PhysX] -> Processor Error!");
+		Utils::AddLog("[PhysX] -> Processor Error!");
 	}
 
 	sceneDesc.cpuDispatcher = gDispatcher;
@@ -291,7 +294,7 @@ void BoxColliderBuffer::CreateShape(entt::entity entity)
 			transformComponent.GetScale().x,
 			transformComponent.GetScale().y,
 			transformComponent.GetScale().z), *pxMaterial, true);
-		if (!pxShape) SherbertHelpers::AddLog("[PhysX] -> Failed to create the box shape!");
+		if (!pxShape) Utils::AddLog("[PhysX] -> Failed to create the box shape!");
 	}
 }
 void BoxColliderBuffer::CreateMaterial()
@@ -301,5 +304,5 @@ void BoxColliderBuffer::CreateMaterial()
 		STATIC_FRICTION,
 		DYNAMIC_FRICTION,
 		RESTITUTION);
-	if (!pxMaterial) SherbertHelpers::AddLog("[PhysX] -> Failed to create the material!");
+	if (!pxMaterial) Utils::AddLog("[PhysX] -> Failed to create the material!");
 }
