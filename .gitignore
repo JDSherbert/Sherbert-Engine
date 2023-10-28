@@ -3,10 +3,11 @@
 SherbertEngine/imgui.ini
 
 # Build Result Outputs
-x64
+SherbertEngine/x64
 *.exe
 *.log
 *.tlog
+*.pdb
 
 # Visual Studio bullshittery
 .vs
