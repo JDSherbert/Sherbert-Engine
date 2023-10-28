@@ -12,6 +12,7 @@
 #include "System/ModelSystem.h"
 #include "System/ScriptingSystem.h"
 #include "Module/Module.h"
+#include "../resource.h"
 
 static DX* dx = &DXClass();
 static Editor* editor = &EditorClass();
@@ -45,7 +46,7 @@ bool DX11CreateWindow(std::wstring name, int width, int height)
     wcex.cbClsExtra = NULL;
     wcex.cbWndExtra = NULL;
     wcex.hInstance = *dx->hInstance;
-    wcex.hIcon = LoadIcon(NULL, IDI_APPLICATION);
+    wcex.hIcon = LoadIcon(NULL, MAKEINTRESOURCE(IDI_ICON1));
     //wcex.hCursor = LoadCursor(NULL, NULL);
     wcex.hbrBackground = (HBRUSH)CreateSolidBrush(RGB(46, 46, 46));
     wcex.lpszMenuName = NULL;
