@@ -9,7 +9,7 @@
 #include <fstream>
 #include "../Core/Main.h"
 
-#define XFILE "C:\\DX\\SHERBERT\\ENGINE\\data.scene"
+#define SCENEPATH "..\\..\\SherbertEngine\\Scene\\data.scene"
 
 static ProjectSceneSystem projectSceneSystem;
 
@@ -72,7 +72,7 @@ void ProjectSceneSystem::SaveScene()
 	}
 	out << YAML::EndMap;
 
-	SaveFile(out, XFILE);
+	SaveFile(out, SCENEPATH);
 }
 
 void ProjectSceneSystem::OpenScene()
@@ -81,7 +81,7 @@ void ProjectSceneSystem::OpenScene()
 
 	ClearScene();
 
-	YAML::Node in = YAML::LoadFile(XFILE);
+	YAML::Node in = YAML::LoadFile(SCENEPATH);
 
 	if (!in["SHERBERT"]) return;
 }
