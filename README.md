@@ -1,4 +1,4 @@
-![JDSherbert - Engine Banner](https://github.com/JDSherbert/Sherbert-Engine/assets/43964243/1689a49d-d54a-48c2-8299-79cb1e04325c)
+![JDSherbert - Engine Banner](https://github.com/JDSherbert/Sherbert-Engine/assets/43964243/f8299c45-00a1-4049-b9e9-7ad5818c9701)
 
 # Sherbert Engine Project
 
