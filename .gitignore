@@ -1,6 +1,5 @@
 ﻿
 # Directories to ignore
-SherbertEngine/x64
 SherbertEngine/imgui.ini
 
 # Build Result Outputs
