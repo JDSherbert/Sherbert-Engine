@@ -1,6 +1,4 @@
-![JDSherbert - Engine Banner](https://github.com/JDSherbert/Sherbert-Engine/assets/43964243/f8299c45-00a1-4049-b9e9-7ad5818c9701)
-
-# Sherbert Engine Project
+# Sherbert Engine
 
 <!-- Header Start -->
   <a href = "https://learn.microsoft.com/en-us/cpp/cpp-language"> <img align="left" height="40" img width="40" src="https://cdn.simpleicons.org/c++"> </a>
@@ -12,4 +10,7 @@
 <img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJDSherbert%2FSherbert-Engine%2Fhit-counter%2FREADME&count_bg=%2379C83D&title_bg=%23555555&labelColor=0E1128&title=🔍&style=for-the-badge">
   <br></br>
   -----------------------------------------------------------------------
-
+  
+## Overview
+Small, lightwieght engine written in C++.
+Still under a lot of work so stay tuned!
