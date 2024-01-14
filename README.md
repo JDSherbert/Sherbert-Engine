@@ -12,5 +12,5 @@
   -----------------------------------------------------------------------
   
 ## Overview
-Small, lightwieght engine written in C++.
+Small, lightweight engine written in C++.
 Still under a lot of work so stay tuned!
