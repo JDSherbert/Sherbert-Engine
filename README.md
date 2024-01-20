@@ -31,5 +31,5 @@ Still under a lot of work so stay tuned!
 
 ### Random Docs and stuff
 
-
-https://sol2.readthedocs.io/
+- https://sol2.readthedocs.io/
+- https://learn.microsoft.com/en-us/windows/win32/direct3d11/atoc-dx-graphics-direct3d-11
