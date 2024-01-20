@@ -23,6 +23,13 @@ Still under a lot of work so stay tuned!
 - Physics:    NVidia PhysX 4.0
 - Audio:      FMOD
 - Scripting:  Lua
-- Assets: Assimp
-- UI: Imgui
+- Assets:     Assimp
+- UI:         Imgui
 - Networking: TBC
+
+-----------------------------------------------------------------------
+
+### Random Docs and stuff
+
+
+https://sol2.readthedocs.io/
