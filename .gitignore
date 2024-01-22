@@ -8,10 +8,53 @@ SherbertEngine/x64
 *.log
 *.tlog
 *.pdb
+*.obj
+*.ilk
+*.exe
+*.pdb
+*.pch
+*.suo
+*.idb
+*.manifest
+*.ipch
+*.aps
 
 # Visual Studio bullshittery
 .vs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dll
+*.exe
+*.pdb
+*.ilk
 *.aps
+*.ipch
+*.log
+*.tlog
+*.ncb
+*.opendb
+*.sdf
+*.dbmdl
+*.log
+*.sqlite
+*.VC.opendb
+*.VC.db
+*.obj
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.pch
+*.mdmp
+*.exp
+log.txt
+
+# Ignore specific file types in all folders
+*.res
+*.exe
+*.exe.recipe
 
 # Imgui ini
 SherbertEngine/imgui.ini
