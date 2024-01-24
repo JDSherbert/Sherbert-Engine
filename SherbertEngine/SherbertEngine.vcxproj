@@ -252,6 +252,10 @@
       <AdditionalLibraryDirectories>$(ProjectDir)\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreLinkEvent>
+      <Command>copy "$(ProjectDir)DLLs\Debug\*.dll" "$(TargetDir)"
+ping -n 6 127.0.0.1 &gt; nul</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -273,6 +277,10 @@
       <AdditionalLibraryDirectories>E:\Projects\Sherbert-Engine\SherbertEngine\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreLinkEvent>
+      <Command>copy "$(ProjectDir)DLLs\Release\*.dll" "$(TargetDir)"
+ping -n 6 127.0.0.1 &gt; nul</Command>
+    </PreLinkEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
