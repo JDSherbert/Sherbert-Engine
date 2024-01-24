@@ -253,7 +253,7 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(ProjectDir)DLLs\Debug\*.dll" "$(TargetDir)"
+      <Command>copy "$(ProjectDir)DLL\Debug\*.dll" "$(TargetDir)"
 ping -n 6 127.0.0.1 &gt; nul</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
