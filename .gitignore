@@ -1,18 +1,61 @@
-﻿
-# Directories to ignore
-SherbertEngine/imgui.ini
+﻿# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Build Result Outputs
-SherbertEngine/x64
-*.exe
-*.log
-*.tlog
-*.pdb
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results Outputs
+# Remove Debug - Release Folders
+# Remove x64 and x86 folders
+Build/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
 
 # Visual Studio bullshittery
 .vs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.exe
+*.pdb
+*.ilk
 *.aps
+*.ipch
+*.log
+*.tlog
+*.ncb
+*.opendb
+*.sdf
+*.dbmdl
+*.sqlite
+*.VC.opendb
+*.VC.db
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.pch
+*.mdmp
+*.exp
+
+# Ignore specific file types in all folders
+*.res
+*.exe
+*.exe.recipe
 
 # Imgui ini
-SherbertEngine/imgui.ini
+
 SherbertEngine/log.txt
+SherbertEngine/imgui.ini
