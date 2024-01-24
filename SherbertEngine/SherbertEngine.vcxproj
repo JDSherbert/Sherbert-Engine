@@ -278,7 +278,7 @@ ping -n 6 127.0.0.1 &gt; nul</Command>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreLinkEvent>
-      <Command>copy "$(ProjectDir)DLLs\Release\*.dll" "$(TargetDir)"
+      <Command>copy "$(ProjectDir)DLL\Release\*.dll" "$(TargetDir)"
 ping -n 6 127.0.0.1 &gt; nul</Command>
     </PreLinkEvent>
   </ItemDefinitionGroup>
