@@ -1,6 +1,7 @@
 //©2021 JDSherbert. All Rights Reserved.
 
 #include "Editor.h"
+#include <filesystem>
 
 #include "Window/File.h"
 #include "Window/Assets.h"
@@ -42,11 +43,27 @@ static Module* module = &ModuleClass();
 
 static ImVec2 mainMenuBarSize = ImVec2(NULL, NULL);
 
+bool createDirectory(const char* path)
+{
+	return CreateDirectoryA(path, NULL) != 0;
+}
+
 bool Editor::Init()
 {
+	if (!createDirectory("../Config"))
+	{
+		std::cerr << "Failed to create directory." << std::endl;
+		return 1;
+	}
+
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	// Possible change To change the location of the imgui.ini file generated and laoded by ImGui.
+	// ../ Go back in directory to (SolutionDir)
+	// Make the specified folder if it doesn't exist. Or Place to the folder you want to save the imgui.ini file.
+	// define name for imgui.ini
+	io.IniFilename = "../Config/imgui.ini";
 	if (!ImGui_ImplWin32_Init(dx->hwnd)) return false;
 	if (!ImGui_ImplDX11_Init(dx->dxDevice, dx->dxDeviceContext)) return false;
 	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
