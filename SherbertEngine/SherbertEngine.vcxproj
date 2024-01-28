@@ -73,6 +73,8 @@
     <ClInclude Include="Source\ECS\Component\TextMeshComponent.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Imgui\ImguiInit.cpp" />
+    <ClCompile Include="Source\Imgui\ImguiInit.h" />
     <ClCompile Include="Source\Module\Module.cpp" />
     <ClCompile Include="Source\System\ScriptingSystem.cpp" />
     <ClCompile Include="Source\System\ProjectSceneSystem.cpp" />
