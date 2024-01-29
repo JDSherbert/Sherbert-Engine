@@ -359,6 +359,11 @@ const char* Utils::OpenFileDialog(LPCWSTR dir, LPCWSTR filter, LPCWSTR title)
 	return b;
 }
 
+bool Utils::CreateDirectory(const char* path)
+{
+	return CreateDirectoryA(path, NULL) != 0;
+}
+
 physx::PxTransform Utils::position_rotation_to_physics(Vector3 position, Quaternion rotation)
 {
 	return physx::PxTransform(

@@ -52,6 +52,7 @@ namespace Utils
 	physx::PxTransform position_rotation_to_physics(Vector3 position, Quaternion rotation);
 	/* --------------------- */
 	const char* OpenFileDialog(LPCWSTR dir, LPCWSTR filter, LPCWSTR title);
+	bool CreateDirectory(const char* path);
 	/* --------------------- */
 	void SerializeVector2(YAML::Emitter& out, Vector2 value);
 	void SerializeVector3(YAML::Emitter& out, Vector3 value);
