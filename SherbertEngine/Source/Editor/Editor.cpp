@@ -1,6 +1,7 @@
 //©2021 JDSherbert. All Rights Reserved.
 
 #include "Editor.h"
+#include <filesystem>
 
 #include "Window/File.h"
 #include "Window/Assets.h"
@@ -16,6 +17,7 @@
 #include "../System/ScriptingSystem.h"
 #include <wincodec.h>
 #include "../Module/Module.h"
+#include "../Imgui/ImguiInit.h"
 
 static Editor editor;
 
@@ -44,9 +46,16 @@ static ImVec2 mainMenuBarSize = ImVec2(NULL, NULL);
 
 bool Editor::Init()
 {
-	IMGUI_CHECKVERSION();
-	ImGui::CreateContext();
-	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	// Eventually we should add a class + function that sets up all required directories for this engine instance
+	// As this is the only one for now it's fine as is
+	if (!Utils::CreateDirectory("../Config"))
+	{
+		std::cerr << "Failed to create directory." << std::endl;
+		return 1;
+	}
+
+	ImGuiIO& io = CreateImguiConfig();
+
 	if (!ImGui_ImplWin32_Init(dx->hwnd)) return false;
 	if (!ImGui_ImplDX11_Init(dx->dxDevice, dx->dxDeviceContext)) return false;
 	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;

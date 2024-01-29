@@ -359,6 +359,12 @@
     <ClCompile Include="Source\ECS\Component\TextMeshComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Imgui\ImguiInit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Imgui\ImguiInit.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\XTK\Math\SimpleMath.inl">
