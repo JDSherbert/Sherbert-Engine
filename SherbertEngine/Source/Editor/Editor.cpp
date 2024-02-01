@@ -48,13 +48,24 @@ bool Editor::Init()
 {
 	// Eventually we should add a class + function that sets up all required directories for this engine instance
 	// As this is the only one for now it's fine as is
-	if (!Utils::CreateDirectory("../Config"))
-	{
-		std::cerr << "Failed to create directory." << std::endl;
-		return 1;
-	}
+	//if (!Utils::CreateDirectory("../Config"))
+	//{
+	//	std::cerr << "Failed to create directory." << std::endl;
+	//	return 1;
+	//}
 
-	ImGuiIO& io = CreateImguiConfig();
+	// Bugged
+	//ImGuiIO& io = CreateImguiConfig();
+
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
+
+	// Possible change To change the location of the imgui.ini file generated and loaded by ImGui.
+	// ../ Go back in directory to (SolutionDir)
+	// Make the specified folder if it doesn't exist. Or Place to the folder you want to save the imgui.ini file.
+	// define name for imgui.ini
+	io.IniFilename = "imgui.ini";//IMGUI_CONFIG_PATH;
 
 	if (!ImGui_ImplWin32_Init(dx->hwnd)) return false;
 	if (!ImGui_ImplDX11_Init(dx->dxDevice, dx->dxDeviceContext)) return false;
