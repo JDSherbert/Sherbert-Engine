@@ -46,26 +46,15 @@ static ImVec2 mainMenuBarSize = ImVec2(NULL, NULL);
 
 bool Editor::Init()
 {
-	// Eventually we should add a class + function that sets up all required directories for this engine instance
-	// As this is the only one for now it's fine as is
-	//if (!Utils::CreateDirectory("../Config"))
-	//{
-	//	std::cerr << "Failed to create directory." << std::endl;
-	//	return 1;
-	//}
-
-	// Bugged
-	//ImGuiIO& io = CreateImguiConfig();
+	CreateImguiConfigFolder(); // Creates " Config " Directory
 
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
-
-	// Possible change To change the location of the imgui.ini file generated and loaded by ImGui.
-	// ../ Go back in directory to (SolutionDir)
-	// Make the specified folder if it doesn't exist. Or Place to the folder you want to save the imgui.ini file.
-	// define name for imgui.ini
-	io.IniFilename = "imgui.ini";//IMGUI_CONFIG_PATH;
+	
+	// Should In the future make sure it is given time before the rest is loaded
+	// to Ensure Imgui is correctly loaded first
+	SetIniFilename(io); // Set INI Filename
 
 	if (!ImGui_ImplWin32_Init(dx->hwnd)) return false;
 	if (!ImGui_ImplDX11_Init(dx->dxDevice, dx->dxDeviceContext)) return false;
