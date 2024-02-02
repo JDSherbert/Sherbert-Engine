@@ -3,20 +3,26 @@
 #include "ImguiInit.h"
 
 #include "../Core/Utils.h"
+#include <iostream>
 
-ImGuiIO& CreateImguiConfig()
+bool CreateImguiConfigFolder()
 {
-	IMGUI_CHECKVERSION();
-	ImGui::CreateContext();
-	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	// If -> " Config " folder doesn't exist, create it in the SolutionDir.
+	if (!Utils::CreateDirectory("../Config"))
+	{
+		std::cerr << "Failed to create directory." << std::endl;
+		return 1;
+	}
+	return 0;
+}
 
-	// Possible change To change the location of the imgui.ini file generated and loaded by ImGui.
-	// ../ Go back in directory to (SolutionDir)
-	// Make the specified folder if it doesn't exist. Or Place to the folder you want to save the imgui.ini file.
-	// define name for imgui.ini
+ImGuiIO& SetIniFilename(ImGuiIO& io)
+{
 	io.IniFilename = IMGUI_CONFIG_PATH;
-
+	std::cerr << "Succesfully Created Ini FileName" << std::endl;
 	return io;
 }
+
+
 
 
