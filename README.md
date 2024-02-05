@@ -20,7 +20,7 @@ Still under a lot of work so stay tuned!
 ### Technologies
 
 - Renderer:   DirectX11
-- Physics:    NVidia PhysX 4.0
+- Physics:    Nvidia PhysX 4.0
 - Audio:      FMOD
 - Scripting:  Lua
 - Assets:     Assimp
