@@ -91,9 +91,6 @@ int StartGame(HINSTANCE& hInstance, HINSTANCE& hPrevInstance, PWSTR& pCmdLine, i
 
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int nCmdShow)
 {
-	freopen("log.txt", "w", stdout);
-	std::cout << "..." << std::endl;
-
 #if defined(XGAME)
 	return StartGame(hInstance, hPrevInstance, pCmdLine, nCmdShow);
 #else
